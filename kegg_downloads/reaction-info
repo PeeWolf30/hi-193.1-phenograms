@@ -1,0 +1,13 @@
+reaction         KEGG Reaction Database
+rn               Release 98.0+/05-20, May 21
+                 Kanehisa Laboratories
+                 11,528 entries
+
+linked db        pathway
+                 brite
+                 module
+                 ko
+                 compound
+                 glycan
+                 rclass
+                 enzyme

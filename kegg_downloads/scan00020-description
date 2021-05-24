@@ -1,0 +1,79 @@
+ENTRY       scan00020                   Pathway
+NAME        Citrate cycle (TCA cycle) - Serinus canaria (common canary)
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP scan00020  Citrate cycle (TCA cycle)
+MODULE      scan_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:scan00020]
+            scan_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:scan00020]
+DBLINKS     GO: 0006099
+ORGANISM    Serinus canaria (common canary) [GN:scan]
+GENE        103821599  ACLY; ATP-citrate synthase [KO:K01648] [EC:2.3.3.8]
+            103821209  ACO1; cytoplasmic aconitate hydratase isoform X2 [KO:K01681] [EC:4.2.1.3]
+            103813297  ACO2; aconitate hydratase, mitochondrial isoform X1 [KO:K01681] [EC:4.2.1.3]
+            103814474  IDH1; isocitrate dehydrogenase [NADP] cytoplasmic [KO:K00031] [EC:1.1.1.42]
+            103816129  IDH2; isocitrate dehydrogenase [NADP], mitochondrial [KO:K00031] [EC:1.1.1.42]
+            103823159  IDH3A; isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial [KO:K00030] [EC:1.1.1.41]
+            103824650  IDH3B; isocitrate dehydrogenase [NAD] subunit beta, mitochondrial [KO:K00030] [EC:1.1.1.41]
+            103814033  OGDHL; 2-oxoglutarate dehydrogenase-like, mitochondrial [KO:K00164] [EC:1.2.4.2]
+            103822661  OGDH; 2-oxoglutarate dehydrogenase, mitochondrial isoform X1 [KO:K00164] [EC:1.2.4.2]
+            103826524  DLST; dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex, mitochondrial isoform X2 [KO:K00658] [EC:2.3.1.61]
+            103813719  DLD; dihydrolipoyl dehydrogenase, mitochondrial [KO:K00382] [EC:1.8.1.4]
+            103826100  SUCLG1; LOW QUALITY PROTEIN: succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitochondrial [KO:K01899] [EC:6.2.1.4 6.2.1.5]
+            103817082  SUCLG2; succinate--CoA ligase [GDP-forming] subunit beta, mitochondrial [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            103827410  SUCLA2; succinate--CoA ligase [ADP-forming] subunit beta, mitochondrial [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            103825927  SDHA; succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial [KO:K00234] [EC:1.3.5.1]
+            103820977  SDHB; succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial [KO:K00235] [EC:1.3.5.1]
+            103823026  SDHD; succinate dehydrogenase [ubiquinone] cytochrome b small subunit, mitochondrial [KO:K00237]
+            103815538  FH; fumarate hydratase, mitochondrial isoform X2 [KO:K01679] [EC:4.2.1.2]
+            103821392  MDH1; malate dehydrogenase, cytoplasmic [KO:K00025] [EC:1.1.1.37]
+            103820076  MDH2; malate dehydrogenase, mitochondrial [KO:K00026] [EC:1.1.1.37]
+            103818749  PCK1; phosphoenolpyruvate carboxykinase, cytosolic [GTP] [KO:K01596] [EC:4.1.1.32]
+            103815841  PDHA1; pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial [KO:K00161] [EC:1.2.4.1]
+            103817192  PDHB; pyruvate dehydrogenase E1 component subunit beta, mitochondrial [KO:K00162] [EC:1.2.4.1]
+            103823027  DLAT; dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial [KO:K00627] [EC:2.3.1.12]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY scan00010  Glycolysis / Gluconeogenesis
+            scan00053  Ascorbate and aldarate metabolism
+            scan00061  Fatty acid biosynthesis
+            scan00062  Fatty acid elongation
+            scan00071  Fatty acid degradation
+            scan00190  Oxidative phosphorylation
+            scan00220  Arginine biosynthesis
+            scan00250  Alanine, aspartate and glutamate metabolism
+            scan00280  Valine, leucine and isoleucine degradation
+            scan00350  Tyrosine metabolism
+            scan00471  D-Glutamine and D-glutamate metabolism
+            scan00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///

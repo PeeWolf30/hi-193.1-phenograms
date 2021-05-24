@@ -1,0 +1,112 @@
+ENTRY       scan00010                   Pathway
+NAME        Glycolysis / Gluconeogenesis - Serinus canaria (common canary)
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP scan00010  Glycolysis / Gluconeogenesis
+MODULE      scan_M00001  Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate [PATH:scan00010]
+            scan_M00002  Glycolysis, core module involving three-carbon compounds [PATH:scan00010]
+            scan_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:scan00010]
+            scan_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:scan00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Serinus canaria (common canary) [GN:scan]
+GENE        103817507  HK3; hexokinase-3 [KO:K00844] [EC:2.7.1.1]
+            103823724  HKDC1; putative hexokinase HKDC1 isoform X1 [KO:K00844] [EC:2.7.1.1]
+            103823725  HK1; hexokinase-1 [KO:K00844] [EC:2.7.1.1]
+            103822724  hexokinase-2 [KO:K00844] [EC:2.7.1.1]
+            108963196  GCK; glucokinase isoform X1 [KO:K12407] [EC:2.7.1.2]
+            103821187  GPI; glucose-6-phosphate isomerase [KO:K01810] [EC:5.3.1.9]
+            103812734  PFKP; ATP-dependent 6-phosphofructokinase, platelet type isoform X3 [KO:K00850] [EC:2.7.1.11]
+            103815490  PFKL; ATP-dependent 6-phosphofructokinase, liver type [KO:K00850] [EC:2.7.1.11]
+            103822944  FBP1; fructose-1,6-bisphosphatase 1 [KO:K03841] [EC:3.1.3.11]
+            103822945  FBP2; fructose-1,6-bisphosphatase isozyme 2 isoform X1 [KO:K03841] [EC:3.1.3.11]
+            103821445  ALDOB; fructose-bisphosphate aldolase B [KO:K01623] [EC:4.1.2.13]
+            103820123  ALDOC; fructose-bisphosphate aldolase C [KO:K01623] [EC:4.1.2.13]
+            103827144  TPI1; LOW QUALITY PROTEIN: triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            103827158  GAPDH; glyceraldehyde-3-phosphate dehydrogenase [KO:K00134] [EC:1.2.1.12]
+            103816345  PGK1; phosphoglycerate kinase 1 [KO:K00927] [EC:2.7.2.3]
+            103813881  PGAM1; phosphoglycerate mutase 1 [KO:K01834] [EC:5.4.2.11]
+            103820786  ENO1; alpha-enolase [KO:K01689] [EC:4.2.1.11]
+            103814119  ENO4; enolase 4 [KO:K01689] [EC:4.2.1.11]
+            103827161  ENO2; gamma-enolase [KO:K01689] [EC:4.2.1.11]
+            103815943  PKM; pyruvate kinase PKM isoform X1 [KO:K00873] [EC:2.7.1.40]
+            103815841  PDHA1; pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial [KO:K00161] [EC:1.2.4.1]
+            103817192  PDHB; pyruvate dehydrogenase E1 component subunit beta, mitochondrial [KO:K00162] [EC:1.2.4.1]
+            103823027  DLAT; dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial [KO:K00627] [EC:2.3.1.12]
+            103813719  DLD; dihydrolipoyl dehydrogenase, mitochondrial [KO:K00382] [EC:1.8.1.4]
+            103819574  LDHB; L-lactate dehydrogenase B chain isoform X1 [KO:K00016] [EC:1.1.1.27]
+            103826768  L-lactate dehydrogenase A chain [KO:K00016] [EC:1.1.1.27]
+            103826032  alcohol dehydrogenase 1 [KO:K13951] [EC:1.1.1.1]
+            103826033  alcohol dehydrogenase 1-like [KO:K13951] [EC:1.1.1.1]
+            115483835  alcohol dehydrogenase 1-like [KO:K13951] [EC:1.1.1.1]
+            103826034  alcohol dehydrogenase class-3 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            103814983  AKR1A1; aldo-keto reductase family 1 member A1 isoform X2 [KO:K00002] [EC:1.1.1.2]
+            103820318  aldehyde dehydrogenase family 3 member A2 isoform X1 [KO:K00128] [EC:1.2.1.3]
+            103818306  ALDH2; aldehyde dehydrogenase, mitochondrial [KO:K00128] [EC:1.2.1.3]
+            103825293  aldehyde dehydrogenase family 3 member A2-like [KO:K00128] [EC:1.2.1.3]
+            103821480  ALDH7A1; alpha-aminoadipic semialdehyde dehydrogenase [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            103823370  ALDH9A1; LOW QUALITY PROTEIN: 4-trimethylaminobutyraldehyde dehydrogenase [KO:K00149] [EC:1.2.1.47 1.2.1.3]
+            103822172  aldehyde dehydrogenase family 3 member B1-like isoform X3 [KO:K00129] [EC:1.2.1.5]
+            103822173  aldehyde dehydrogenase family 3 member B1-like isoform X2 [KO:K00129] [EC:1.2.1.5]
+            103818596  ACSS2; acetyl-coenzyme A synthetase, cytoplasmic isoform X1 [KO:K01895] [EC:6.2.1.1]
+            103821380  ACSS1; acetyl-coenzyme A synthetase 2-like, mitochondrial [KO:K01895] [EC:6.2.1.1]
+            103826530  acetyl-coenzyme A synthetase 2-like, mitochondrial isoform X2 [KO:K01895] [EC:6.2.1.1]
+            103821326  GALM; aldose 1-epimerase [KO:K01785] [EC:5.1.3.3]
+            103815068  PGM1; phosphoglucomutase-1 [KO:K01835] [EC:5.4.2.2]
+            103824722  PGM2; phosphoglucomutase-2 [KO:K15779] [EC:5.4.2.2 5.4.2.7]
+            103821577  G6PC; glucose-6-phosphatase [KO:K01084] [EC:3.1.3.9]
+            103814411  G6PC2; glucose-6-phosphatase 2 isoform X1 [KO:K01084] [EC:3.1.3.9]
+            103825224  G6PC3; glucose-6-phosphatase 3 [KO:K01084] [EC:3.1.3.9]
+            103816150  ADPGK; ADP-dependent glucokinase isoform X1 [KO:K08074] [EC:2.7.1.147]
+            103820477  BPGM; bisphosphoglycerate mutase [KO:K01837] [EC:5.4.2.4 5.4.2.11]
+            103814225  MINPP1; LOW QUALITY PROTEIN: multiple inositol polyphosphate phosphatase 1 [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+            103818749  PCK1; phosphoenolpyruvate carboxykinase, cytosolic [GTP] [KO:K01596] [EC:4.1.1.32]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY scan00020  Citrate cycle (TCA cycle)
+            scan00030  Pentose phosphate pathway
+            scan00500  Starch and sucrose metabolism
+            scan00620  Pyruvate metabolism
+            scan00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///

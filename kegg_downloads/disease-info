@@ -1,0 +1,15 @@
+disease          KEGG Disease Database
+ds               Release 98.0+/05-20, May 21
+                 Kanehisa Laboratories
+                 2,507 entries
+
+linked db        pathway
+                 brite
+                 module
+                 ko
+                 genome
+                 hsa
+                 compound
+                 network
+                 drug
+                 pubmed

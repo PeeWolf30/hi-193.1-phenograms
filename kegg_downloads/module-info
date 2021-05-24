@@ -1,0 +1,15 @@
+module           KEGG Module Database
+md               Release 98.0+/05-20, May 21
+                 Kanehisa Laboratories
+                 517 entries
+
+linked db        pathway
+                 ko
+                 genome
+                 <org>
+                 compound
+                 glycan
+                 reaction
+                 enzyme
+                 disease
+                 pubmed

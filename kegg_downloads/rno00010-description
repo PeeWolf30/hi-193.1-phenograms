@@ -1,0 +1,129 @@
+ENTRY       rno00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Rattus norvegicus (rat)
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP rno00010  Glycolysis / Gluconeogenesis
+MODULE      rno_M00001  Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate [PATH:rno00010]
+            rno_M00002  Glycolysis, core module involving three-carbon compounds [PATH:rno00010]
+            rno_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:rno00010]
+            rno_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:rno00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Rattus norvegicus (rat) [GN:rno]
+GENE        25058  Hk1; hexokinase-1 [KO:K00844] [EC:2.7.1.1]
+            25059  Hk2; hexokinase-2 [KO:K00844] [EC:2.7.1.1]
+            25060  Hk3; hexokinase-3 [KO:K00844] [EC:2.7.1.1]
+            100364027  Hkdc1; hexokinase HKDC1 isoform X1 [KO:K00844] [EC:2.7.1.1]
+            24385  Gck; hexokinase-4 isoform 2 [KO:K12407] [EC:2.7.1.2]
+            292804  Gpi; glucose-6-phosphate isomerase [KO:K01810] [EC:5.3.1.9]
+            65152  Pfkm; ATP-dependent 6-phosphofructokinase, muscle type [KO:K00850] [EC:2.7.1.11]
+            25741  Pfkl; ATP-dependent 6-phosphofructokinase, liver type [KO:K00850] [EC:2.7.1.11]
+            60416  Pfkp; ATP-dependent 6-phosphofructokinase, platelet type [KO:K00850] [EC:2.7.1.11]
+            24362  Fbp1; fructose-1,6-bisphosphatase 1 [KO:K03841] [EC:3.1.3.11]
+            114508  Fbp2; fructose-1,6-bisphosphatase isozyme 2 [KO:K03841] [EC:3.1.3.11]
+            24189  Aldoa; fructose-bisphosphate aldolase A [KO:K01623] [EC:4.1.2.13]
+            24191  Aldoc; fructose-bisphosphate aldolase C [KO:K01623] [EC:4.1.2.13]
+            24190  Aldob; fructose-bisphosphate aldolase B [KO:K01623] [EC:4.1.2.13]
+            299052  Aldoart2; fructose-bisphosphate aldolase [KO:K01623] [EC:4.1.2.13]
+            24849  Tpi1; triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            500959  triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            24383  Gapdh; glyceraldehyde-3-phosphate dehydrogenase [KO:K00134] [EC:1.2.1.12]
+            303448  uncharacterized protein LOC303448 [KO:K00134] [EC:1.2.1.12]
+            290604  RGD1564958; glyceraldehyde-3-phosphate dehydrogenase-like [KO:K00134] [EC:1.2.1.12]
+            66020  Gapdhs; glyceraldehyde-3-phosphate dehydrogenase, testis-specific [KO:K10705] [EC:1.2.1.12]
+            24644  Pgk1; phosphoglycerate kinase 1 [KO:K00927] [EC:2.7.2.3]
+            316265  Pgk2; phosphoglycerate kinase 2 [KO:K00927] [EC:2.7.2.3]
+            24642  Pgam1; phosphoglycerate mutase 1 [KO:K01834] [EC:5.4.2.11]
+            24959  Pgam2; phosphoglycerate mutase 2 [KO:K01834] [EC:5.4.2.11]
+            24333  Eno1; alpha-enolase [KO:K01689] [EC:4.2.1.11]
+            25438  Eno3; beta-enolase [KO:K01689] [EC:4.2.1.11]
+            24334  Eno2; gamma-enolase [KO:K01689] [EC:4.2.1.11]
+            292138  Eno4; enolase 4 [KO:K01689] [EC:4.2.1.11]
+            25630  Pkm; pyruvate kinase PKM [KO:K00873] [EC:2.7.1.40]
+            100364062  pyruvate kinase PKM [KO:K00873] [EC:2.7.1.40]
+            24651  Pklr; pyruvate kinase PKLR [KO:K12406] [EC:2.7.1.40]
+            117098  Pdha2; pyruvate dehydrogenase E1 component subunit alpha, testis-specific form, mitochondrial precursor [KO:K00161] [EC:1.2.4.1]
+            29554  Pdha1; pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial precursor [KO:K00161] [EC:1.2.4.1]
+            289950  Pdhb; pyruvate dehydrogenase E1 component subunit beta, mitochondrial precursor [KO:K00162] [EC:1.2.4.1]
+            81654  Dlat; dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial [KO:K00627] [EC:2.3.1.12]
+            298942  Dld; dihydrolipoyl dehydrogenase, mitochondrial precursor [KO:K00382] [EC:1.8.1.4]
+            24533  Ldha; L-lactate dehydrogenase A chain [KO:K00016] [EC:1.1.1.27]
+            24534  Ldhb; L-lactate dehydrogenase B chain isoform Ldhb [KO:K00016] [EC:1.1.1.27]
+            29634  Ldhc; L-lactate dehydrogenase C chain [KO:K00016] [EC:1.1.1.27]
+            369018  Ldhal6b; L-lactate dehydrogenase A-like 6B [KO:K00016] [EC:1.1.1.27]
+            24172  Adh1; alcohol dehydrogenase 1 [KO:K13951] [EC:1.1.1.1]
+            171178  Adh7; all-trans-retinol dehydrogenase [NAD(+)] ADH7 [KO:K13951] [EC:1.1.1.1]
+            29646  Adh4; all-trans-retinol dehydrogenase [NAD(+)] ADH4 [KO:K13980] [EC:1.1.1.1]
+            100145871  Adh5; alcohol dehydrogenase class-3 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            310903  Adh6; alcohol dehydrogenase 6 [KO:K13952] [EC:1.1.1.1]
+            78959  Akr1a1; aldo-keto reductase family 1 member A1 [KO:K00002] [EC:1.1.1.2]
+            29539  Aldh2; aldehyde dehydrogenase, mitochondrial precursor [KO:K00128] [EC:1.2.1.3]
+            65183  Aldh3a2; aldehyde dehydrogenase family 3 member A2 [KO:K00128] [EC:1.2.1.3]
+            298079  Aldh1b1; aldehyde dehydrogenase X, mitochondrial precursor [KO:K00128] [EC:1.2.1.3]
+            291450  Aldh7a1; alpha-aminoadipic semialdehyde dehydrogenase [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            64040  Aldh9a1; 4-trimethylaminobutyraldehyde dehydrogenase [KO:K00149] [EC:1.2.1.47 1.2.1.3]
+            25375  Aldh3a1; aldehyde dehydrogenase, dimeric NADP-preferring [KO:K00129] [EC:1.2.1.5]
+            309147  Aldh3b1; aldehyde dehydrogenase family 3 member B1 [KO:K00129] [EC:1.2.1.5]
+            688778  aldehyde dehydrogenase family 3 member B3 isoform X1 [KO:K00129] [EC:1.2.1.5]
+            688800  Aldh3b2; aldehyde dehydrogenase family 3 member B2 [KO:K00129] [EC:1.2.1.5]
+            296259  Acss1; acetyl-coenzyme A synthetase 2-like, mitochondrial [KO:K01895] [EC:6.2.1.1]
+            311569  Acss2; acetyl-coenzyme A synthetase, cytoplasmic [KO:K01895] [EC:6.2.1.1]
+            313843  Galm; galactose mutarotase [KO:K01785] [EC:5.1.3.3]
+            24645  Pgm1; phosphoglucomutase-1 [KO:K01835] [EC:5.4.2.2]
+            25634  G6pc1; glucose-6-phosphatase [KO:K01084] [EC:3.1.3.9]
+            681817  G6pc2; LOW QUALITY PROTEIN: glucose-6-phosphatase 2 [KO:K01084] [EC:3.1.3.9]
+            303565  G6pc3; glucose-6-phosphatase 3 [KO:K01084] [EC:3.1.3.9]
+            315722  Adpgk; ADP-dependent glucokinase precursor [KO:K08074] [EC:2.7.1.147]
+            296973  Bpgm; bisphosphoglycerate mutase [KO:K01837] [EC:5.4.2.4 5.4.2.11]
+            29688  Minpp1; multiple inositol polyphosphate phosphatase 1 precursor [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+            362282  Pck1; phosphoenolpyruvate carboxykinase, cytosolic [GTP] [KO:K01596] [EC:4.1.1.32]
+            361042  Pck2; phosphoenolpyruvate carboxykinase [GTP], mitochondrial [KO:K01596] [EC:4.1.1.32]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY rno00020  Citrate cycle (TCA cycle)
+            rno00030  Pentose phosphate pathway
+            rno00500  Starch and sucrose metabolism
+            rno00620  Pyruvate metabolism
+            rno00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///

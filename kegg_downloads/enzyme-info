@@ -1,0 +1,15 @@
+enzyme           KEGG Enzyme Database
+ec               Release 98.0+/05-20, May 21
+                 Kanehisa Laboratories
+                 7,852 entries
+
+linked db        pathway
+                 module
+                 ko
+                 <org>
+                 vg
+                 ag
+                 compound
+                 glycan
+                 reaction
+                 rclass
