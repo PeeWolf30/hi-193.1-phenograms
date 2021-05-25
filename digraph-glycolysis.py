@@ -9,7 +9,6 @@ class Taxa:
         self.Edges = list_E
 
 
-
 def removeDuplicates(lst):
     return [t for t in (set(tuple(i) for i in lst))]
 
@@ -61,6 +60,78 @@ def combinePathways(GA, GB):
 
     return GMaster
 
+
+
+def bitCheck(DE, G):
+    #DE is a (tuple) distinct edge from a list of tuples
+    #G is a (class) distinct graph from a list of graphs
+    if(DE in G.Edges):
+        return 1
+    else:
+        return 0
+
+def generateFPTable(G):
+    #collate all distinct edges from the list of graphs
+    FPTable = []
+    DE = []
+
+    for i in range(len(G)):
+        for j in range(len(G[i].Edges)):
+            DE.append(G[i].Edges[j])
+
+    DE = removeDuplicates(DE)
+    print(DE)
+    print(type(DE))
+    print(len(DE))
+
+
+    for x in range(len(DE)):
+        bitDE = []
+        row = []
+        parity = 0
+        row.append(DE[x])
+
+        for y in range(len(G)):
+            #check for presence of DE
+            bitDE.append(bitCheck(DE[x], G[y]))
+
+            #count parity
+            parity = bitDE.count(1)
+
+        row.append(bitDE)
+        row.append(parity)
+        FPTable.append(row)
+
+    return FPTable
+
+
+def sortTable(FPTable):
+    #Sorting FP Table based on Parity
+    FPTable.sort(key = lambda FPTable: FPTable[2], reverse=True)
+    print(FPTable)
+
+    #Sorting FP Table based on decimal values
+    for i in range(len(FPTable)):
+        if (FPTable[i][2] != 5):
+            print(FPTable[i][1])
+            #getting decimal values
+            val = 0
+            for j in range(len(FPTable[i][1])):
+                val += FPTable[i][1][j] * (len(FPTable[i][1]) - j)
+            FPTable[i][1].append(val)
+            print(FPTable[i][1])
+        else:
+            FPTable[i][1].append(15)
+    FPTable.sort(key = lambda FPTable: FPTable[1][5], reverse=True)
+
+    #remove unnecessary elements to display
+    for i in range(len(FPTable)):
+        FPTable[i].pop()
+        FPTable[i][1].pop()
+        FPTable[i].insert(0, i+1)
+
+    return FPTable
+
 def main():
     #preliminaries
     currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -73,12 +144,12 @@ def main():
     ##### [1] HOMO SAPIENS #######
     #getting info: Homo sapiens (human
     #selecting pathway: Glycolysis
-    kg.get_infos("hsa00010")
+    #kg.get_infos("hsa00010")
     pathway1A = kg.KEGGpathway(pathway_id = "hsa00010")
     G1A = generateGraph(pathway1A)
 
     #selecting pathway: Citrate Cycle
-    kg.get_infos("hsa00020")
+    #kg.get_infos("hsa00020")
     pathway1B = kg.KEGGpathway(pathway_id = "hsa00020")
     G1B = generateGraph(pathway1B)
 
@@ -92,16 +163,16 @@ def main():
 
 
 
-    ##### [2] RATTUS NORVEGICUS #######
-    #getting info: Ratus norvegicus (rat)
+    ##### [2] SCHIZOSACCHAROMYCES POMBE #######
+    #getting info: Schizosaccharomyces pombe
     #selecting pathway: Glycolysis
-    kg.get_infos("rno00010")
-    pathway2A = kg.KEGGpathway(pathway_id = "rno00010")
+    #kg.get_infos("spo00010")
+    pathway2A = kg.KEGGpathway(pathway_id = "spo00010")
     G2A = generateGraph(pathway2A)
 
     #selecting pathway: Citrate Cycle
-    kg.get_infos("rno00020")
-    pathway2B = kg.KEGGpathway(pathway_id = "rno00020")
+    #kg.get_infos("spo00020")
+    pathway2B = kg.KEGGpathway(pathway_id = "spo00020")
     G2B = generateGraph(pathway2B)
 
     G2 = combinePathways(G2A, G2B)
@@ -109,21 +180,21 @@ def main():
     print(G2.Vertices)
     print(G2.Edges)
 
-    ##### end RATTUS NORVEGICUS #######
+    ##### end SCHIZOSACCHAROMYCES POMBE #######
 
 
 
 
-    ##### [3] SERINUS CANARIA #######
-    #getting info: Serinus canaria (common canary)
+    ##### [3] CIONA INTESTINALIS #######
+    #getting info: Ciona intestinalis (sea squirt)
     #selecting pathway: Glycolysis
-    kg.get_infos("scan00010")
-    pathway3A = kg.KEGGpathway(pathway_id = "scan00010")
+    #kg.get_infos("cin00010")
+    pathway3A = kg.KEGGpathway(pathway_id = "cin00010")
     G3A = generateGraph(pathway3A)
 
     #selecting pathway: Citrate Cycle
-    kg.get_infos("scan00020")
-    pathway3B = kg.KEGGpathway(pathway_id = "scan00020")
+    #kg.get_infos("cin00020")
+    pathway3B = kg.KEGGpathway(pathway_id = "cin00020")
     G3B = generateGraph(pathway3B)
 
     G3 = combinePathways(G3A, G3B)
@@ -136,16 +207,19 @@ def main():
 
 
 
-    ##### [4] AILUROPODA MELANOLEUCA #######
-    #getting info: Ailuropoda melanoleuca (giant panda)
+    ##### [4] BRASSICA OLERACEA #######
+    #getting info: Brassica oleracea (wild cabbage)
     #selecting pathway: Glycolysis
-    kg.get_infos("aml00010")
-    pathway4A = kg.KEGGpathway(pathway_id = "aml00010")
+    #kg.get_infos("boe00010")
+    pathway4A = kg.KEGGpathway(pathway_id = "boe00010")
     G4A = generateGraph(pathway4A)
+    print("PRINTING HERE")
+    print(G4A.Vertices)
+    print(G4A.Edges)
 
     #selecting pathway: Citrate Cycle
-    kg.get_infos("aml00020")
-    pathway4B = kg.KEGGpathway(pathway_id = "aml00020")
+    #kg.get_infos("boe00020")
+    pathway4B = kg.KEGGpathway(pathway_id = "boe00020")
     G4B = generateGraph(pathway4B)
 
     G4 = combinePathways(G4A, G4B)
@@ -158,16 +232,16 @@ def main():
 
 
 
-    ##### [5] PHYSETER CATODON #######
-    #getting info: Physeter catodon (sperm whale)
+    ##### [5] ENTEROBACTER SICHUANENSIS #######
+    #getting info: Enterobacter sichuanesis
     #selecting pathway: Glycolysis
-    kg.get_infos("pcad00010")
-    pathway5A = kg.KEGGpathway(pathway_id = "pcad00010")
+    #kg.get_infos("esh00010")
+    pathway5A = kg.KEGGpathway(pathway_id = "esh00010")
     G5A = generateGraph(pathway5A)
 
     #selecting pathway: Citrate Cycle
-    kg.get_infos("pcad00020")
-    pathway5B = kg.KEGGpathway(pathway_id = "pcad00020")
+    #kg.get_infos("esh00020")
+    pathway5B = kg.KEGGpathway(pathway_id = "esh00020")
     G5B = generateGraph(pathway5B)
 
     G5 = combinePathways(G5A, G5B)
@@ -185,50 +259,14 @@ def main():
         print(f"G{i+1} V: {len(G_set1[i].Vertices)} | G{i+1} E: {len(G_set1[i].Edges)}")
 
 
-    #Generating FP Table
-    generateFPTable(G_set1)
+    #Printing FP Table
+    FPTable = generateFPTable(G_set1)
+    print(FPTable)
 
+    #Sorting/Beautifying FP Table
+    FPTable_sorted = sortTable(FPTable)
 
-def bitCheck(DE, G):
-    #DE is a (tuple) distinct edge from a list of tuples
-    #G is a (class) distinct graph from a list of graphs
-    if(DE in G.Edges):
-        return 1
-    else:
-        return 0
-
-def generateFPTable(G):
-    #collate all distinct edges from the list of graphs
-    FPTable = [['DE', 'bit']]
-    DE = []
-
-    for i in range(len(G)):
-        for j in range(len(G[i].Edges)):
-            DE.append(G[i].Edges[j])
-
-    DE = removeDuplicates(DE)
-    print(DE)
-    print(type(DE))
-    print(len(DE))
-
-
-    for x in range(len(DE)):
-        bitDE = []
-        row = []
-
-        row.append(DE[x])
-
-        for y in range(len(G)):
-            #check for presence of DE
-
-            bitDE.append(bitCheck(DE[x], G[y]))
-
-        row.append(bitDE)
-        FPTable.append(row)
-
-
-    print(tabulate(FPTable, headers='firstrow'))
-
+    print(tabulate(FPTable_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
 
 
 if __name__=="__main__":
