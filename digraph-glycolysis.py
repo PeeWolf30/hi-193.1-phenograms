@@ -188,6 +188,53 @@ def main():
     #Generating FP Table
     generateFPTable(G_set1)
 
+    #Set 2
+    ##### [6] Canis lupus familiaris #######
+    G6 = getInfoKegg("dog", "cfa00010", "cfa00020")
+
+    ##### [7] Octopus bimaculoides #######
+    G7 = getInfoKegg("octopus", "obi00010", "obi00020")
+
+    ##### [8] Delphinapterus leucas #######
+    G8 = getInfoKegg("beluga whale", "dle00010", "dle00020")
+
+    ##### [9] Panthera pardus #######
+    G9 = getInfoKegg("leopard", "ppad00010", "ppad00020")
+
+    ##### [10] Panthera tigris altaica #######
+    G10 = getInfoKegg("amur tiger", "ptg00010", "ptg00020")
+
+    ##### ANALYZING GRAPHS #####
+    G_set2 = [G6,G7,G8,G9,G10]
+
+    for i in range(len(G_set1)):
+        print(f"G{i+1} V: {len(G_set1[i].Vertices)} | G{i+1} E: {len(G_set1[i].Edges)}")
+
+
+    #Generating FP Table
+    generateFPTable(G_set2)
+
+    
+
+
+def getInfoKegg(name, glycolysis_code, citrate_code):
+    #getting info: Homo sapiens (human
+    #selecting pathway: Glycolysis
+    kg.get_infos(glycolysis_code)
+    pathwayA = kg.KEGGpathway(pathway_id = glycolysis_code)
+    GA = generateGraph(pathwayA)
+
+    #selecting pathway: Citrate Cycle
+    kg.get_infos(citrate_code)
+    pathwayB = kg.KEGGpathway(pathway_id = citrate_code)
+    GB = generateGraph(pathwayB)
+
+    G = combinePathways(GA, GB)
+    print(f'Graph of {name}')
+    print(G.Vertices)
+    print(G.Edges)
+
+    return G
 
 def bitCheck(DE, G):
     #DE is a (tuple) distinct edge from a list of tuples

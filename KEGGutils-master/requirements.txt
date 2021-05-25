@@ -1,0 +1,9 @@
+networkx
+matplotlib
+awesome-slugify
+requests
+Pillow
+scipy
+pytest
+pytest-cov
+jupyter

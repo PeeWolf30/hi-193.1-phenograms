@@ -1,0 +1,16 @@
+
+*.pyc
+*.egg
+*.egg-info
+*.coverage
+
+debugscript.py
+
+dist
+build
+source
+.ipynb_checkpoints
+kegg_downloads
+
+tests/test_files_dir/*
+tests/htmlcov/*

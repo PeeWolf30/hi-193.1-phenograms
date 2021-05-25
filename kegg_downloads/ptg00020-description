@@ -1,0 +1,88 @@
+ENTRY       ptg00020                    Pathway
+NAME        Citrate cycle (TCA cycle) - Panthera tigris altaica (Amur tiger)
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP ptg00020  Citrate cycle (TCA cycle)
+MODULE      ptg_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:ptg00020]
+            ptg_M00009  Citrate cycle (TCA cycle, Krebs cycle) [PATH:ptg00020]
+            ptg_M00010  Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate [PATH:ptg00020]
+            ptg_M00011  Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate [PATH:ptg00020]
+            ptg_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:ptg00020]
+DBLINKS     GO: 0006099
+ORGANISM    Panthera tigris altaica (Amur tiger) [GN:ptg]
+GENE        102966644  CS; citrate synthase [KO:K01647] [EC:2.3.3.1]
+            102954566  ACLY; ATP citrate lyase [KO:K01648] [EC:2.3.3.8]
+            102952771  ACO1; aconitase 1 [KO:K01681] [EC:4.2.1.3]
+            102958161  ACO2; aconitase 2 [KO:K01681] [EC:4.2.1.3]
+            102962124  IDH2; isocitrate dehydrogenase (NADP(+)) 2, mitochondrial [KO:K00031] [EC:1.1.1.42]
+            102967152  IDH1; isocitrate dehydrogenase (NADP(+)) 1, cytosolic [KO:K00031] [EC:1.1.1.42]
+            102955736  IDH3B; isocitrate dehydrogenase 3 (NAD(+)) beta [KO:K00030] [EC:1.1.1.41]
+            102968859  IDH3A; isocitrate dehydrogenase 3 (NAD(+)) alpha [KO:K00030] [EC:1.1.1.41]
+            102954160  IDH3G; isocitrate dehydrogenase 3 (NAD(+)) gamma [KO:K00030] [EC:1.1.1.41]
+            102956596  OGDH; oxoglutarate dehydrogenase [KO:K00164] [EC:1.2.4.2]
+            102955978  OGDHL; oxoglutarate dehydrogenase-like [KO:K00164] [EC:1.2.4.2]
+            102960887  DLST; dihydrolipoamide S-succinyltransferase [KO:K00658] [EC:2.3.1.61]
+            102956479  DLD; dihydrolipoamide dehydrogenase [KO:K00382] [EC:1.8.1.4]
+            102951774  SUCLG1; succinate-CoA ligase alpha subunit [KO:K01899] [EC:6.2.1.4 6.2.1.5]
+            102962704  SUCLG2; succinate-CoA ligase GDP-forming beta subunit [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            102964246  SUCLA2; succinate-CoA ligase ADP-forming beta subunit [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            102949810  SDHA; succinate dehydrogenase complex flavoprotein subunit A [KO:K00234] [EC:1.3.5.1]
+            102961107  SDHB; succinate dehydrogenase complex iron sulfur subunit B [KO:K00235] [EC:1.3.5.1]
+            102958685  SDHC; succinate dehydrogenase complex subunit C [KO:K00236]
+            102952867  SDHD; succinate dehydrogenase complex subunit D [KO:K00237]
+            102956633  FH; fumarate hydratase [KO:K01679] [EC:4.2.1.2]
+            102951622  MDH1; malate dehydrogenase 1 [KO:K00025] [EC:1.1.1.37]
+            102972029  MDH2; malate dehydrogenase 2 [KO:K00026] [EC:1.1.1.37]
+            102971922  PC; pyruvate carboxylase [KO:K01958] [EC:6.4.1.1]
+            102955973  PCK2; phosphoenolpyruvate carboxykinase 2, mitochondrial [KO:K01596] [EC:4.1.1.32]
+            102967618  PCK1; phosphoenolpyruvate carboxykinase 1 [KO:K01596] [EC:4.1.1.32]
+            102968217  PDHA2; pyruvate dehydrogenase (lipoamide) alpha 2 [KO:K00161] [EC:1.2.4.1]
+            102963682  PDHA1; pyruvate dehydrogenase (lipoamide) alpha 1 [KO:K00161] [EC:1.2.4.1]
+            102949119  PDHB; pyruvate dehydrogenase (lipoamide) beta [KO:K00162] [EC:1.2.4.1]
+            102955065  DLAT; dihydrolipoamide S-acetyltransferase [KO:K00627] [EC:2.3.1.12]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY ptg00010  Glycolysis / Gluconeogenesis
+            ptg00053  Ascorbate and aldarate metabolism
+            ptg00061  Fatty acid biosynthesis
+            ptg00062  Fatty acid elongation
+            ptg00071  Fatty acid degradation
+            ptg00190  Oxidative phosphorylation
+            ptg00220  Arginine biosynthesis
+            ptg00250  Alanine, aspartate and glutamate metabolism
+            ptg00280  Valine, leucine and isoleucine degradation
+            ptg00350  Tyrosine metabolism
+            ptg00471  D-Glutamine and D-glutamate metabolism
+            ptg00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///
