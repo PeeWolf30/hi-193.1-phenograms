@@ -1,0 +1,79 @@
+ENTRY       hiw00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Haemophilus influenzae 477
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP hiw00010  Glycolysis / Gluconeogenesis
+MODULE      hiw_M00002  Glycolysis, core module involving three-carbon compounds [PATH:hiw00010]
+            hiw_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:hiw00010]
+            hiw_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:hiw00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Haemophilus influenzae 477 [GN:hiw]
+GENE        NTHI477_00080  pgi; Glucose-6-phosphate isomerase [KO:K01810] [EC:5.3.1.9]
+            NTHI477_00727  pfkA; 6-phosphofructokinase isozyme 1 [KO:K00850] [EC:2.7.1.11]
+            NTHI477_00518  fbp; Fructose-1,6-bisphosphatase class 1 [KO:K03841] [EC:3.1.3.11]
+            NTHI477_01765  glpX; Fructose-1,6-bisphosphatase 1 class 2 [KO:K02446] [EC:3.1.3.11]
+            NTHI477_01633  fbaA; Fructose-bisphosphate aldolase class 2 [KO:K01624] [EC:4.1.2.13]
+            NTHI477_01776  tpiA; Triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            NTHI477_01028  gapA; Glyceraldehyde-3-phosphate dehydrogenase A [KO:K00134] [EC:1.2.1.12]
+            NTHI477_01634  pgk; Phosphoglycerate kinase [KO:K00927] [EC:2.7.2.3]
+            NTHI477_00951  gpmA; 2,3-bisphosphoglycerate-dependent phosphoglycerate mutase [KO:K01834] [EC:5.4.2.11]
+            NTHI477_00776  eno; Enolase [KO:K01689] [EC:4.2.1.11]
+            NTHI477_00083  pykA; Pyruvate kinase II [KO:K00873] [EC:2.7.1.40]
+            NTHI477_00419  aceE; Pyruvate dehydrogenase E1 component [KO:K00163] [EC:1.2.4.1]
+            NTHI477_00420  aceF; Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex [KO:K00627] [EC:2.3.1.12]
+            NTHI477_00421  lpdA; Dihydrolipoyl dehydrogenase [KO:K00382] [EC:1.8.1.4]
+            NTHI477_01216  frmA; S-(hydroxymethyl)glutathione dehydrogenase [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            NTHI477_00886  galM; Aldose 1-epimerase [KO:K01785] [EC:5.1.3.3]
+            NTHI477_00157  yeaD; Putative glucose-6-phosphate 1-epimerase [KO:K01792] [EC:5.1.3.15]
+            NTHI477_00895  pckA; Phosphoenolpyruvate carboxykinase [ATP] [KO:K01610] [EC:4.1.1.49]
+            NTHI477_00028  crr; Glucose-specific phosphotransferase enzyme IIA component [KO:K02777] [EC:2.7.1.-]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY hiw00020  Citrate cycle (TCA cycle)
+            hiw00030  Pentose phosphate pathway
+            hiw00500  Starch and sucrose metabolism
+            hiw00620  Pyruvate metabolism
+            hiw00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///

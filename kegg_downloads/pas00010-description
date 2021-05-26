@@ -1,0 +1,99 @@
+ENTRY       pas00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Pyrobaculum arsenaticum
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP pas00010  Glycolysis / Gluconeogenesis
+MODULE      pas_M00002  Glycolysis, core module involving three-carbon compounds [PATH:pas00010]
+            pas_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:pas00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Pyrobaculum arsenaticum [GN:pas]
+GENE        Pars_1872  glucokinase [KO:K25026] [EC:2.7.1.2]
+            Pars_2130  bifunctional phosphoglucose/phosphomannose isomerase [KO:K15916] [EC:5.3.1.9 5.3.1.8]
+            Pars_0141  fructose-bisphosphate aldolase [KO:K01622] [EC:4.1.2.13 3.1.3.11]
+            Pars_0622  triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            Pars_0743  glyceraldehyde-3-phosphate dehydrogenase [KO:K00150] [EC:1.2.1.59]
+            Pars_0744  phosphoglycerate kinase [KO:K00927] [EC:2.7.2.3]
+            Pars_1540  phosphoglycerate mutase [KO:K15635] [EC:5.4.2.12]
+            Pars_0056  enolase [KO:K01689] [EC:4.2.1.11]
+            Pars_0063  pyruvate kinase [KO:K00873] [EC:2.7.1.40]
+            Pars_1008  pyruvate phosphate dikinase [KO:K01006] [EC:2.7.9.1]
+            Pars_0510  Pyruvate, water dikinase [KO:K01007] [EC:2.7.9.2]
+            Pars_1445  phosphoenolpyruvate synthase [KO:K01007] [EC:2.7.9.2]
+            Pars_0511  PEP-utilizing enzyme, mobile region [KO:K01007] [EC:2.7.9.2]
+            Pars_0515  PEP-utilizing enzyme, mobile region [KO:K01007] [EC:2.7.9.2]
+            Pars_1189  Pyruvate dehydrogenase (acetyl-transferring) [KO:K00161] [EC:1.2.4.1]
+            Pars_1188  Transketolase, central region [KO:K00162] [EC:1.2.4.1]
+            Pars_1187  catalytic domain of components of various dehydrogenase complexes [KO:K00627] [EC:2.3.1.12]
+            Pars_0195  pyruvate ferredoxin oxidoreductase, alpha subunit [KO:K00169] [EC:1.2.7.1]
+            Pars_1706  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Pars_2278  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Pars_2277  thiamine pyrophosphate enzyme domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Pars_1705  thiamine pyrophosphate enzyme domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Pars_0196  pyruvate ferredoxin oxidoreductase, beta subunit [KO:K00170] [EC:1.2.7.1]
+            Pars_0193  pyruvate/ketoisovalerate oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Pars_2279  pyruvate ferredoxin oxidoreductase, delta subunit / pyruvate ferredoxin oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Pars_1708  pyruvate/ketoisovalerate oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Pars_0194  pyruvate ferredoxin oxidoreductase, delta subunit [KO:K00171] [EC:1.2.7.1]
+            Pars_1707  pyruvate ferredoxin/flavodoxin oxidoreductase, delta subunit [KO:K00171] [EC:1.2.7.1]
+            Pars_1250  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            Pars_0139  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            Pars_1249  pyruvate ferredoxin/flavodoxin oxidoreductase, beta subunit [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Pars_0138  pyruvate ferredoxin/flavodoxin oxidoreductase, beta subunit [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Pars_0396  succinate semialdehyde reductase (NADPH) [KO:K13953] [EC:1.1.1.1]
+            Pars_0547  Alcohol dehydrogenase GroES domain protein [KO:K00001] [EC:1.1.1.1]
+            Pars_0948  acetyl-coenzyme A synthetase [KO:K01895] [EC:6.2.1.1]
+            Pars_1308  AMP-dependent synthetase and ligase [KO:K01895] [EC:6.2.1.1]
+            Pars_1805  conserved hypothetical protein [KO:K22224] [EC:6.2.1.13]
+            Pars_1804  CoA-binding domain protein [KO:K24012] [EC:6.2.1.13]
+            Pars_0189  glyceraldehyde-3-phosphate ferredoxin oxidoreductase [KO:K11389] [EC:1.2.7.6]
+            Pars_0554  nonphosphorylating glyceraldehyde-3-phosphate dehydrogenase [KO:K18978] [EC:1.2.1.90]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY pas00020  Citrate cycle (TCA cycle)
+            pas00030  Pentose phosphate pathway
+            pas00500  Starch and sucrose metabolism
+            pas00620  Pyruvate metabolism
+            pas00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///

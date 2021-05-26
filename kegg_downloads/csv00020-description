@@ -1,0 +1,98 @@
+ENTRY       csv00020                    Pathway
+NAME        Citrate cycle (TCA cycle) - Cucumis sativus (cucumber)
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP csv00020  Citrate cycle (TCA cycle)
+MODULE      csv_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:csv00020]
+            csv_M00010  Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate [PATH:csv00020]
+            csv_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:csv00020]
+DBLINKS     GO: 0006099
+ORGANISM    Cucumis sativus (cucumber) [GN:csv]
+GENE        101220412  citrate synthase, mitochondrial [KO:K01647] [EC:2.3.3.1]
+            101209376  citrate synthase, glyoxysomal [KO:K01647] [EC:2.3.3.1]
+            101216462  ATP-citrate synthase alpha chain protein 2 [KO:K01648] [EC:2.3.3.8]
+            101209126  ATP-citrate synthase alpha chain protein 1 [KO:K01648] [EC:2.3.3.8]
+            101222110  ATP-citrate synthase beta chain protein 2 isoform X2 [KO:K01648] [EC:2.3.3.8]
+            101209539  ATP-citrate synthase beta chain protein 2 [KO:K01648] [EC:2.3.3.8]
+            101221392  aconitate hydratase, cytoplasmic [KO:K01681] [EC:4.2.1.3]
+            101217715  aconitate hydratase [KO:K01681] [EC:4.2.1.3]
+            101211294  IDH; cytosolic isocitrate dehydrogenase [KO:K00031] [EC:1.1.1.42]
+            101202770  isocitrate dehydrogenase [NADP] [KO:K00031] [EC:1.1.1.42]
+            101213909  isocitrate dehydrogenase [NAD] regulatory subunit 1, mitochondrial [KO:K00030] [EC:1.1.1.41]
+            101214612  isocitrate dehydrogenase [NAD] regulatory subunit 1, mitochondrial [KO:K00030] [EC:1.1.1.41]
+            101219331  isocitrate dehydrogenase [NAD] catalytic subunit 5, mitochondrial [KO:K00030] [EC:1.1.1.41]
+            101222022  2-oxoglutarate dehydrogenase, mitochondrial [KO:K00164] [EC:1.2.4.2]
+            101208883  2-oxoglutarate dehydrogenase, mitochondrial [KO:K00164] [EC:1.2.4.2]
+            101204042  dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex 1, mitochondrial [KO:K00658] [EC:2.3.1.61]
+            101222823  leghemoglobin reductase [KO:K00382] [EC:1.8.1.4]
+            101207718  dihydrolipoyl dehydrogenase, mitochondrial isoform X1 [KO:K00382] [EC:1.8.1.4]
+            101209306  dihydrolipoyl dehydrogenase 2, chloroplastic [KO:K00382] [EC:1.8.1.4]
+            101206269  succinate--CoA ligase [ADP-forming] subunit alpha, mitochondrial [KO:K01899] [EC:6.2.1.4 6.2.1.5]
+            101205496  succinate--CoA ligase [ADP-forming] subunit beta, mitochondrial [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            101211616  succinate dehydrogenase [ubiquinone] flavoprotein subunit 1, mitochondrial [KO:K00234] [EC:1.3.5.1]
+            101209955  succinate dehydrogenase [ubiquinone] iron-sulfur subunit 3, mitochondrial [KO:K00235] [EC:1.3.5.1]
+            101220767  succinate dehydrogenase [ubiquinone] iron-sulfur subunit 2, mitochondrial [KO:K00235] [EC:1.3.5.1]
+            11123870  sdh3; succinate dehydrogenase subunit 3 [KO:K00236]
+            101203115  fumarate hydratase 1, mitochondrial [KO:K01679] [EC:4.2.1.2]
+            101204387  malate dehydrogenase, cytoplasmic [KO:K00025] [EC:1.1.1.37]
+            101221189  malate dehydrogenase, cytoplasmic isoform X1 [KO:K00025] [EC:1.1.1.37]
+            101213903  malate dehydrogenase, chloroplastic [KO:K00026] [EC:1.1.1.37]
+            101214377  malate dehydrogenase, chloroplastic [KO:K00026] [EC:1.1.1.37]
+            101219252  malate dehydrogenase, glyoxysomal [KO:K00026] [EC:1.1.1.37]
+            101207078  malate dehydrogenase, mitochondrial [KO:K00026] [EC:1.1.1.37]
+            101222382  phosphoenolpyruvate carboxykinase (ATP) [KO:K01610] [EC:4.1.1.49]
+            101220209  phosphoenolpyruvate carboxykinase (ATP) [KO:K01610] [EC:4.1.1.49]
+            101215598  pyruvate dehydrogenase E1 component subunit alpha-3, chloroplastic [KO:K00161] [EC:1.2.4.1]
+            101208773  pyruvate dehydrogenase E1 component subunit alpha, mitochondrial [KO:K00161] [EC:1.2.4.1]
+            101205918  pyruvate dehydrogenase E1 component subunit alpha-1, mitochondrial [KO:K00161] [EC:1.2.4.1]
+            101204247  pyruvate dehydrogenase E1 component subunit beta-3, chloroplastic [KO:K00162] [EC:1.2.4.1]
+            101220981  pyruvate dehydrogenase E1 component subunit beta-1, mitochondrial [KO:K00162] [EC:1.2.4.1]
+            101203257  dihydrolipoyllysine-residue acetyltransferase component 2 of pyruvate dehydrogenase complex, mitochondrial isoform X2 [KO:K00627] [EC:2.3.1.12]
+            101215151  dihydrolipoyllysine-residue acetyltransferase component 5 of pyruvate dehydrogenase complex, chloroplastic [KO:K00627] [EC:2.3.1.12]
+            101205566  dihydrolipoyllysine-residue acetyltransferase component 1 of pyruvate dehydrogenase complex, mitochondrial isoform X1 [KO:K00627] [EC:2.3.1.12]
+            101220730  dihydrolipoyllysine-residue acetyltransferase component 4 of pyruvate dehydrogenase complex, chloroplastic [KO:K00627] [EC:2.3.1.12]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY csv00010  Glycolysis / Gluconeogenesis
+            csv00053  Ascorbate and aldarate metabolism
+            csv00061  Fatty acid biosynthesis
+            csv00062  Fatty acid elongation
+            csv00071  Fatty acid degradation
+            csv00190  Oxidative phosphorylation
+            csv00220  Arginine biosynthesis
+            csv00250  Alanine, aspartate and glutamate metabolism
+            csv00280  Valine, leucine and isoleucine degradation
+            csv00350  Tyrosine metabolism
+            csv00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///

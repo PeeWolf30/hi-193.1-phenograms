@@ -1,0 +1,87 @@
+ENTRY       ovi00020                    Pathway
+NAME        Citrate cycle (TCA cycle) - Opisthorchis viverrini
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP ovi00020  Citrate cycle (TCA cycle)
+MODULE      ovi_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:ovi00020]
+            ovi_M00009  Citrate cycle (TCA cycle, Krebs cycle) [PATH:ovi00020]
+            ovi_M00010  Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate [PATH:ovi00020]
+            ovi_M00011  Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate [PATH:ovi00020]
+            ovi_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:ovi00020]
+DBLINKS     GO: 0006099
+ORGANISM    Opisthorchis viverrini [GN:ovi]
+GENE        T265_05845  hypothetical protein [KO:K01647] [EC:2.3.3.1]
+            T265_05322  hypothetical protein [KO:K01648] [EC:2.3.3.8]
+            T265_14256  hypothetical protein [KO:K01681] [EC:4.2.1.3]
+            T265_05892  hypothetical protein [KO:K00031] [EC:1.1.1.42]
+            T265_02546  hypothetical protein [KO:K00030] [EC:1.1.1.41]
+            T265_04624  hypothetical protein [KO:K00030] [EC:1.1.1.41]
+            T265_11588  hypothetical protein [KO:K00030] [EC:1.1.1.41]
+            T265_07551  hypothetical protein [KO:K00164] [EC:1.2.4.2]
+            T265_11785  hypothetical protein [KO:K00658] [EC:2.3.1.61]
+            T265_09297  hypothetical protein [KO:K00382] [EC:1.8.1.4]
+            T265_00432  hypothetical protein [KO:K01899] [EC:6.2.1.4 6.2.1.5]
+            T265_10291  hypothetical protein [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            T265_13783  hypothetical protein [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            T265_03241  hypothetical protein [KO:K01900] [EC:6.2.1.4 6.2.1.5]
+            T265_15668  hypothetical protein [KO:K00234] [EC:1.3.5.1]
+            T265_01077  hypothetical protein [KO:K00235] [EC:1.3.5.1]
+            T265_09992  hypothetical protein [KO:K00236]
+            T265_09911  hypothetical protein [KO:K00237]
+            T265_13772  hypothetical protein [KO:K01676] [EC:4.2.1.2]
+            T265_06847  hypothetical protein [KO:K01679] [EC:4.2.1.2]
+            T265_04260  hypothetical protein [KO:K00025] [EC:1.1.1.37]
+            T265_05466  hypothetical protein [KO:K00026] [EC:1.1.1.37]
+            T265_03273  hypothetical protein [KO:K01958] [EC:6.4.1.1]
+            T265_03274  hypothetical protein [KO:K01958] [EC:6.4.1.1]
+            T265_05309  hypothetical protein [KO:K01596] [EC:4.1.1.32]
+            T265_07882  hypothetical protein [KO:K01596] [EC:4.1.1.32]
+            T265_07717  hypothetical protein [KO:K00161] [EC:1.2.4.1]
+            T265_01591  hypothetical protein [KO:K00161] [EC:1.2.4.1]
+            T265_11829  hypothetical protein [KO:K00162] [EC:1.2.4.1]
+            T265_02080  hypothetical protein [KO:K00627] [EC:2.3.1.12]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY ovi00010  Glycolysis / Gluconeogenesis
+            ovi00053  Ascorbate and aldarate metabolism
+            ovi00061  Fatty acid biosynthesis
+            ovi00062  Fatty acid elongation
+            ovi00071  Fatty acid degradation
+            ovi00190  Oxidative phosphorylation
+            ovi00220  Arginine biosynthesis
+            ovi00250  Alanine, aspartate and glutamate metabolism
+            ovi00280  Valine, leucine and isoleucine degradation
+            ovi00350  Tyrosine metabolism
+            ovi00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///

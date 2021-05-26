@@ -2,6 +2,8 @@ import os,sys,inspect
 import KEGGutils as kg
 from tabulate import tabulate
 import networkx as nx
+from scipy.cluster import hierarchy
+import matplotlib.pyplot as plt
 
 class Taxa:
     def __init__(self, list_V, list_E):
@@ -60,7 +62,11 @@ def combinePathways(GA, GB):
 
     return GMaster
 
-
+def print_phenogram(dist_matrix, graph_names):
+    clustered_matrix = hierarchy.linkage(dist_matrix, 'single')
+    plt.figure()
+    pn = hierarchy.dendrogram(clustered_matrix, labels=graph_names)
+    plt.show()
 
 def bitCheck(DE, G):
     #DE is a (tuple) distinct edge from a list of tuples
@@ -328,47 +334,47 @@ def main():
 
     #Printing FP Table
     FPTable = generateFPTable(G_set1)
-    print(FPTable)
+    # print(FPTable)
 
     #Sorting/Beautifying FP Table
     FPTable1_sorted = sortTable(FPTable)
 
-    print(tabulate(FPTable1_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
+    # print(tabulate(FPTable1_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
 
 
     #Set 2
-    ##### [6] Canis lupus familiaris #######
-    G6 = getInfoKegg("dog", "cfa00010", "cfa00020")
+    G6 = getInfoKegg("Vulcanisaeta distributa", "thg00010", "thg00020")
+    G7 = getInfoKegg("Haemophilus influenzae", "hic00010", "hic00020")
+    G8 = getInfoKegg("Ipomoea nil (Japanese morning glory)", "ini00010", "ini00020")
+    G9 = getInfoKegg("Opisthorchis viverrini", "ovi00010", "ovi00020")
+    G10 = getInfoKegg("Phytophthora sojae", "psoj00010", "psoj00020")
 
-    ##### [7] Octopus bimaculoides #######
-    G7 = getInfoKegg("octopus", "obi00010", "obi00020")
-
-    ##### [8] Delphinapterus leucas #######
-    G8 = getInfoKegg("beluga whale", "dle00010", "dle00020")
-
-    ##### [9] Panthera pardus #######
-    G9 = getInfoKegg("leopard", "ppad00010", "ppad00020")
-
-    ##### [10] Panthera tigris altaica #######
-    G10 = getInfoKegg("amur tiger", "ptg00010", "ptg00020")
 
     ##### ANALYZING GRAPHS #####
     G_set2 = [G6,G7,G8,G9,G10]
 
-    for i in range(len(G_set2)):
-        print(f"G{i+6} V: {len(G_set2[i].Vertices)} | G{i+6} E: {len(G_set2[i].Edges)}")
+    # for i in range(len(G_set2)):
+    #     print(f"G{i+6} V: {len(G_set2[i].Vertices)} | G{i+6} E: {len(G_set2[i].Edges)}")
 
 
     #FP Table
     FPTable2 = generateFPTable(G_set2)
     FPTable2_sorted = sortTable(FPTable2)
-    print(tabulate(FPTable2_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
+    # print(tabulate(FPTable2_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
     
-    print(getHammingSim(G_set1, FPTable1_sorted))
-    print(getJSISim(G_set1, FPTable1_sorted))
-    print(getHammingSim(G_set2, FPTable2_sorted))
-    print(getJSISim(G_set2, FPTable2_sorted))
+    set1_names = ['hsa', 'spo', 'cin', 'boe', 'esh']
+    set2_names = ['thg', 'hic', 'ini', 'ovi', 'psoj']
 
+    set1_sim_mat_hd = getHammingSim(G_set1, FPTable1_sorted)
+    set1_sim_mat_jsi = getJSISim(G_set1, FPTable1_sorted)
+    set2_sim_mat_hd = getHammingSim(G_set2, FPTable2_sorted)
+    set2_sim_mat_jsi = getJSISim(G_set2, FPTable2_sorted)
+
+    print_phenogram(set1_sim_mat_hd, set1_names)
+    print_phenogram(set1_sim_mat_jsi, set1_names)
+    
+    print_phenogram(set2_sim_mat_hd, set2_names)
+    print_phenogram(set2_sim_mat_jsi, set2_names)
 
 
 if __name__=="__main__":

@@ -1,0 +1,188 @@
+ENTRY       rcn00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Rosa chinensis (China rose)
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP rcn00010  Glycolysis / Gluconeogenesis
+MODULE      rcn_M00001  Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate [PATH:rcn00010]
+            rcn_M00002  Glycolysis, core module involving three-carbon compounds [PATH:rcn00010]
+            rcn_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:rcn00010]
+            rcn_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:rcn00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Rosa chinensis (China rose) [GN:rcn]
+GENE        112174711  hexokinase-2, chloroplastic [KO:K00844] [EC:2.7.1.1]
+            112186816  hexokinase-1-like [KO:K00844] [EC:2.7.1.1]
+            112185981  hexokinase-1-like [KO:K00844] [EC:2.7.1.1]
+            112183884  probable hexokinase-like 2 protein [KO:K00844] [EC:2.7.1.1]
+            112178365  glucose-6-phosphate isomerase 1, chloroplastic-like [KO:K01810] [EC:5.3.1.9]
+            112178366  glucose-6-phosphate isomerase 1, chloroplastic-like [KO:K01810] [EC:5.3.1.9]
+            112178743  glucose-6-phosphate isomerase 1, chloroplastic-like isoform X1 [KO:K01810] [EC:5.3.1.9]
+            112173694  glucose-6-phosphate isomerase, cytosolic [KO:K01810] [EC:5.3.1.9]
+            112172108  LOW QUALITY PROTEIN: ATP-dependent 6-phosphofructokinase 6 [KO:K00850] [EC:2.7.1.11]
+            112164665  ATP-dependent 6-phosphofructokinase 2 [KO:K00850] [EC:2.7.1.11]
+            112194105  ATP-dependent 6-phosphofructokinase 4, chloroplastic [KO:K00850] [EC:2.7.1.11]
+            112188750  ATP-dependent 6-phosphofructokinase 6-like [KO:K00850] [EC:2.7.1.11]
+            112187986  ATP-dependent 6-phosphofructokinase 5, chloroplastic [KO:K00850] [EC:2.7.1.11]
+            112189773  ATP-dependent 6-phosphofructokinase 6-like [KO:K00850] [EC:2.7.1.11]
+            112179989  pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit alpha [KO:K00895] [EC:2.7.1.90]
+            112184988  pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit beta-like [KO:K00895] [EC:2.7.1.90]
+            112167006  pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit beta [KO:K00895] [EC:2.7.1.90]
+            112200784  pyrophosphate--fructose 6-phosphate 1-phosphotransferase subunit beta-like [KO:K00895] [EC:2.7.1.90]
+            112179851  fructose-1,6-bisphosphatase, cytosolic-like isoform X1 [KO:K03841] [EC:3.1.3.11]
+            112178813  fructose-1,6-bisphosphatase, cytosolic-like isoform X1 [KO:K03841] [EC:3.1.3.11]
+            112173448  fructose-1,6-bisphosphatase, cytosolic [KO:K03841] [EC:3.1.3.11]
+            112174816  fructose-1,6-bisphosphatase, chloroplastic [KO:K03841] [EC:3.1.3.11]
+            112176029  fructose-1,6-bisphosphatase, cytosolic-like isoform X1 [KO:K03841] [EC:3.1.3.11]
+            112195199  fructose-1,6-bisphosphatase, chloroplastic [KO:K03841] [EC:3.1.3.11]
+            112171994  fructose-bisphosphate aldolase 1, chloroplastic [KO:K01623] [EC:4.1.2.13]
+            112195180  fructose-bisphosphate aldolase 1, cytoplasmic-like [KO:K01623] [EC:4.1.2.13]
+            112195181  fructose-bisphosphate aldolase 1, cytoplasmic [KO:K01623] [EC:4.1.2.13]
+            112198215  fructose-bisphosphate aldolase 3, chloroplastic [KO:K01623] [EC:4.1.2.13]
+            112202072  fructose-bisphosphate aldolase, cytoplasmic isozyme 1 [KO:K01623] [EC:4.1.2.13]
+            112185299  triosephosphate isomerase, cytosolic [KO:K01803] [EC:5.3.1.1]
+            112166323  triosephosphate isomerase, cytosolic [KO:K01803] [EC:5.3.1.1]
+            112173908  triosephosphate isomerase, chloroplastic [KO:K01803] [EC:5.3.1.1]
+            112181644  glyceraldehyde-3-phosphate dehydrogenase, cytosolic-like [KO:K00134] [EC:1.2.1.12]
+            112179622  glyceraldehyde-3-phosphate dehydrogenase, cytosolic [KO:K00134] [EC:1.2.1.12]
+            112179899  glyceraldehyde-3-phosphate dehydrogenase, cytosolic-like [KO:K00134] [EC:1.2.1.12]
+            112166143  glyceraldehyde-3-phosphate dehydrogenase GAPCP1, chloroplastic-like isoform X1 [KO:K00134] [EC:1.2.1.12]
+            112197548  glyceraldehyde-3-phosphate dehydrogenase, cytosolic [KO:K00134] [EC:1.2.1.12]
+            112189839  glyceraldehyde-3-phosphate dehydrogenase, cytosolic-like [KO:K00134] [EC:1.2.1.12]
+            112189840  glyceraldehyde-3-phosphate dehydrogenase, cytosolic-like isoform X1 [KO:K00134] [EC:1.2.1.12]
+            112165210  phosphoglycerate kinase, cytosolic-like [KO:K00927] [EC:2.7.2.3]
+            112164952  phosphoglycerate kinase, cytosolic [KO:K00927] [EC:2.7.2.3]
+            112191262  uncharacterized protein LOC112191262 [KO:K00927] [EC:2.7.2.3]
+            112176811  uncharacterized protein LOC112176811 [KO:K01834] [EC:5.4.2.11]
+            112189371  uncharacterized protein LOC112189371 [KO:K01834] [EC:5.4.2.11]
+            112183480  phosphoglycerate mutase-like protein 4 isoform X1 [KO:K15634] [EC:5.4.2.11]
+            112192241  2,3-bisphosphoglycerate-independent phosphoglycerate mutase [KO:K15633] [EC:5.4.2.12]
+            112177086  enolase 1, chloroplastic [KO:K01689] [EC:4.2.1.11]
+            112168427  cytosolic enolase 3 [KO:K01689] [EC:4.2.1.11]
+            112192478  enolase [KO:K01689] [EC:4.2.1.11]
+            112194724  enolase [KO:K01689] [EC:4.2.1.11]
+            112176514  pyruvate kinase isozyme G, chloroplastic [KO:K00873] [EC:2.7.1.40]
+            112182414  plastidial pyruvate kinase 2 [KO:K00873] [EC:2.7.1.40]
+            112164868  pyruvate kinase, cytosolic isozyme [KO:K00873] [EC:2.7.1.40]
+            112174039  pyruvate kinase isozyme A, chloroplastic-like isoform X1 [KO:K00873] [EC:2.7.1.40]
+            112164951  pyruvate kinase, cytosolic isozyme-like [KO:K00873] [EC:2.7.1.40]
+            112197359  pyruvate kinase, cytosolic isozyme [KO:K00873] [EC:2.7.1.40]
+            112193127  pyruvate kinase 1, cytosolic-like isoform X1 [KO:K00873] [EC:2.7.1.40]
+            112191786  pyruvate kinase 1, cytosolic isoform X1 [KO:K00873] [EC:2.7.1.40]
+            112197442  pyruvate kinase isozyme A, chloroplastic [KO:K00873] [EC:2.7.1.40]
+            112200482  pyruvate, phosphate dikinase 2 isoform X1 [KO:K01006] [EC:2.7.9.1]
+            112182161  pyruvate dehydrogenase E1 component subunit alpha-3, chloroplastic [KO:K00161] [EC:1.2.4.1]
+            112197594  pyruvate dehydrogenase E1 component subunit alpha-1, mitochondrial [KO:K00161] [EC:1.2.4.1]
+            112166142  pyruvate dehydrogenase E1 component subunit beta-3, chloroplastic-like [KO:K00162] [EC:1.2.4.1]
+            112199883  pyruvate dehydrogenase E1 component subunit beta-1, mitochondrial isoform X1 [KO:K00162] [EC:1.2.4.1]
+            112182239  dihydrolipoyllysine-residue acetyltransferase component 1 of pyruvate dehydrogenase complex, mitochondrial isoform X1 [KO:K00627] [EC:2.3.1.12]
+            112174081  LOW QUALITY PROTEIN: dihydrolipoyllysine-residue acetyltransferase component 5 of pyruvate dehydrogenase complex, chloroplastic [KO:K00627] [EC:2.3.1.12]
+            112186112  dihydrolipoyllysine-residue acetyltransferase component 3 of pyruvate dehydrogenase complex, mitochondrial-like [KO:K00627] [EC:2.3.1.12]
+            112197645  dihydrolipoyllysine-residue acetyltransferase component 4 of pyruvate dehydrogenase complex, chloroplastic [KO:K00627] [EC:2.3.1.12]
+            112200427  dihydrolipoyl dehydrogenase 2, chloroplastic [KO:K00382] [EC:1.8.1.4]
+            112197861  dihydrolipoyl dehydrogenase, mitochondrial [KO:K00382] [EC:1.8.1.4]
+            112175321  L-lactate dehydrogenase A-like [KO:K00016] [EC:1.1.1.27]
+            112201064  L-lactate dehydrogenase B-like [KO:K00016] [EC:1.1.1.27]
+            112199053  L-lactate dehydrogenase A-like [KO:K00016] [EC:1.1.1.27]
+            112180095  pyruvate decarboxylase 4-like [KO:K01568] [EC:4.1.1.1]
+            112167547  pyruvate decarboxylase 2-like [KO:K01568] [EC:4.1.1.1]
+            112192290  pyruvate decarboxylase 2 [KO:K01568] [EC:4.1.1.1]
+            112202804  pyruvate decarboxylase 1 [KO:K01568] [EC:4.1.1.1]
+            112172000  alcohol dehydrogenase class-3 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112173136  alcohol dehydrogenase-like 7 isoform X1 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112173137  alcohol dehydrogenase-like 7 isoform X1 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112181511  alcohol dehydrogenase-like 1 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112174496  alcohol dehydrogenase-like 7 isoform X1 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112197255  alcohol dehydrogenase-like 1 isoform X1 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            112174501  alcohol dehydrogenase [KO:K18857] [EC:1.1.1.1]
+            112182499  alcohol dehydrogenase-like isoform X1 [KO:K18857] [EC:1.1.1.1]
+            112173795  alcohol dehydrogenase-like isoform X1 [KO:K18857] [EC:1.1.1.1]
+            112173796  alcohol dehydrogenase-like isoform X1 [KO:K18857] [EC:1.1.1.1]
+            112173798  alcohol dehydrogenase-like isoform X1 [KO:K18857] [EC:1.1.1.1]
+            112173799  alcohol dehydrogenase 3-like [KO:K18857] [EC:1.1.1.1]
+            112176006  alcohol dehydrogenase-like 6 [KO:K00001] [EC:1.1.1.1]
+            112180413  alcohol dehydrogenase-like 4 [KO:K00001] [EC:1.1.1.1]
+            112180414  alcohol dehydrogenase-like 3 [KO:K00001] [EC:1.1.1.1]
+            112192898  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112192899  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112192896  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112195899  alcohol dehydrogenase [NADP(+)]-like [KO:K00002] [EC:1.1.1.2]
+            112191370  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112193826  NADPH-dependent aldo-keto reductase, chloroplastic-like isoform X1 [KO:K00002] [EC:1.1.1.2]
+            112193828  aldo-keto reductase family 4 member C10-like [KO:K00002] [EC:1.1.1.2]
+            112193829  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112193830  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112193831  NADPH-dependent aldo-keto reductase, chloroplastic-like [KO:K00002] [EC:1.1.1.2]
+            112173279  aldehyde dehydrogenase family 3 member H1-like [KO:K00128] [EC:1.2.1.3]
+            112178817  aldehyde dehydrogenase family 2 member B4, mitochondrial-like [KO:K00128] [EC:1.2.1.3]
+            112187009  aldehyde dehydrogenase family 3 member H1-like isoform X1 [KO:K00128] [EC:1.2.1.3]
+            112168869  aldehyde dehydrogenase family 3 member H1-like isoform X1 [KO:K00128] [EC:1.2.1.3]
+            112197938  aldehyde dehydrogenase family 2 member B7, mitochondrial-like isoform X1 [KO:K00128] [EC:1.2.1.3]
+            112199504  aldehyde dehydrogenase family 3 member H1-like [KO:K00128] [EC:1.2.1.3]
+            112190240  aldehyde dehydrogenase family 3 member F1 [KO:K00128] [EC:1.2.1.3]
+            112187805  aldehyde dehydrogenase family 7 member A1 [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            112186315  acetyl-coenzyme A synthetase, chloroplastic/glyoxysomal [KO:K01895] [EC:6.2.1.1]
+            112197158  acetate/butyrate--CoA ligase AAE7, peroxisomal [KO:K01913] [EC:6.2.1.1 6.2.1.2]
+            112180851  aldose 1-epimerase isoform X1 [KO:K01785] [EC:5.1.3.3]
+            112179028  aldose 1-epimerase [KO:K01785] [EC:5.1.3.3]
+            112189021  aldose 1-epimerase-like [KO:K01785] [EC:5.1.3.3]
+            112168892  phosphoglucomutase, chloroplastic [KO:K01835] [EC:5.4.2.2]
+            112197974  phosphoglucomutase, cytoplasmic [KO:K01835] [EC:5.4.2.2]
+            112176960  putative glucose-6-phosphate 1-epimerase [KO:K01792] [EC:5.1.3.15]
+            112182858  putative glucose-6-phosphate 1-epimerase [KO:K01792] [EC:5.1.3.15]
+            112198102  putative glucose-6-phosphate 1-epimerase isoform X1 [KO:K01792] [EC:5.1.3.15]
+            112190492  putative glucose-6-phosphate 1-epimerase [KO:K01792] [EC:5.1.3.15]
+            112179772  multiple inositol polyphosphate phosphatase 1 [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+            112188495  NADP-dependent glyceraldehyde-3-phosphate dehydrogenase [KO:K00131] [EC:1.2.1.9]
+            112164493  phosphoenolpyruvate carboxykinase (ATP)-like [KO:K01610] [EC:4.1.1.49]
+            112175314  phosphoenolpyruvate carboxykinase (ATP)-like [KO:K01610] [EC:4.1.1.49]
+            112188193  phosphoenolpyruvate carboxykinase (ATP)-like [KO:K01610] [EC:4.1.1.49]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY rcn00020  Citrate cycle (TCA cycle)
+            rcn00030  Pentose phosphate pathway
+            rcn00500  Starch and sucrose metabolism
+            rcn00620  Pyruvate metabolism
+            rcn00640  Propanoate metabolism
+            rcn00710  Carbon fixation in photosynthetic organisms
+KO_PATHWAY  ko00010
+///

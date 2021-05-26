@@ -1,0 +1,141 @@
+ENTRY       psoj00010                   Pathway
+NAME        Glycolysis / Gluconeogenesis - Phytophthora sojae
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP psoj00010  Glycolysis / Gluconeogenesis
+MODULE      psoj_M00002  Glycolysis, core module involving three-carbon compounds [PATH:psoj00010]
+            psoj_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:psoj00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Phytophthora sojae [GN:psoj]
+GENE        PHYSODRAFT_286936  hypothetical protein [KO:K00845] [EC:2.7.1.2]
+            PHYSODRAFT_355187  hypothetical protein [KO:K00845] [EC:2.7.1.2]
+            PHYSODRAFT_285564  glucose-6-phosphate isomerase [KO:K01810] [EC:5.3.1.9]
+            PHYSODRAFT_343844  hypothetical protein [KO:K00850] [EC:2.7.1.11]
+            PHYSODRAFT_354389  fructose-1,6-bisphosphatase [KO:K03841] [EC:3.1.3.11]
+            PHYSODRAFT_329369  hypothetical protein [KO:K03841] [EC:3.1.3.11]
+            PHYSODRAFT_285741  hypothetical protein [KO:K01803] [EC:5.3.1.1]
+            PHYSODRAFT_329236  hypothetical protein [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_557387  hypothetical protein [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_354375  hypothetical protein [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_285579  hypothetical protein [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_285407  glyceraldehyde-3-phosphate dehydrogenase [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_285408  hypothetical protein [KO:K00134] [EC:1.2.1.12]
+            PHYSODRAFT_355963  phosphoglycerate kinase [KO:K00927] [EC:2.7.2.3]
+            PHYSODRAFT_560711  hypothetical protein [KO:K00927] [EC:2.7.2.3]
+            PHYSODRAFT_360745  hypothetical protein [KO:K01834] [EC:5.4.2.11]
+            PHYSODRAFT_560339  phosphglycerate mutase [KO:K01834] [EC:5.4.2.11]
+            PHYSODRAFT_358108  hypothetical protein [KO:K01689] [EC:4.2.1.11]
+            PHYSODRAFT_491966  hypothetical protein [KO:K01689] [EC:4.2.1.11]
+            PHYSODRAFT_260428  phosphopyruvate hydratase [KO:K01689] [EC:4.2.1.11]
+            PHYSODRAFT_284295  hypothetical protein [KO:K01689] [EC:4.2.1.11]
+            PHYSODRAFT_288739  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_525100  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_549920  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_288740  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_341872  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_251518  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_560503  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_467666  pyruvate kinase [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_323992  hypothetical protein [KO:K00873] [EC:2.7.1.40]
+            PHYSODRAFT_473609  hypothetical protein [KO:K01006] [EC:2.7.9.1]
+            PHYSODRAFT_343277  hypothetical protein [KO:K01006] [EC:2.7.9.1]
+            PHYSODRAFT_477481  hypothetical protein [KO:K01006] [EC:2.7.9.1]
+            PHYSODRAFT_552258  hypothetical protein [KO:K01006] [EC:2.7.9.1]
+            PHYSODRAFT_477009  hypothetical protein [KO:K01006] [EC:2.7.9.1]
+            PHYSODRAFT_353479  pyruvate dehydrogenase E1 alpha subunit [KO:K00161] [EC:1.2.4.1]
+            PHYSODRAFT_284579  hypothetical protein [KO:K00162] [EC:1.2.4.1]
+            PHYSODRAFT_317375  hypothetical protein [KO:K00627] [EC:2.3.1.12]
+            PHYSODRAFT_562723  hypothetical protein [KO:K00627] [EC:2.3.1.12]
+            PHYSODRAFT_556052  hypothetical protein [KO:K00382] [EC:1.8.1.4]
+            PHYSODRAFT_344556  hypothetical protein [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            PHYSODRAFT_487842  hypothetical protein [KO:K13953] [EC:1.1.1.1]
+            PHYSODRAFT_483665  hypothetical protein [KO:K13953] [EC:1.1.1.1]
+            PHYSODRAFT_327855  hypothetical protein [KO:K13953] [EC:1.1.1.1]
+            PHYSODRAFT_285309  zinc-dependent alcohol dehydrogenase [KO:K13953] [EC:1.1.1.1]
+            PHYSODRAFT_327857  zinc-dependent alcohol dehydrogenase [KO:K13953] [EC:1.1.1.1]
+            PHYSODRAFT_355296  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_548576  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_347561  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_287118  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_287119  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_563676  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_337582  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_338154  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_325872  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_257013  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_355299  hypothetical protein [KO:K00002] [EC:1.1.1.2]
+            PHYSODRAFT_501339  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_352984  aldehyde dehydrogenase [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_556984  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_483906  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_256563  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_541556  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_353899  hypothetical protein [KO:K00128] [EC:1.2.1.3]
+            PHYSODRAFT_353879  hypothetical protein [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            PHYSODRAFT_504885  hypothetical protein [KO:K01895] [EC:6.2.1.1]
+            PHYSODRAFT_546262  hypothetical protein [KO:K01895] [EC:6.2.1.1]
+            PHYSODRAFT_507774  hypothetical protein [KO:K01895] [EC:6.2.1.1]
+            PHYSODRAFT_284734  acetyl-CoA synthetase [KO:K01895] [EC:6.2.1.1]
+            PHYSODRAFT_286472  hypothetical protein [KO:K01785] [EC:5.1.3.3]
+            PHYSODRAFT_554034  hypothetical protein [KO:K01835] [EC:5.4.2.2]
+            PHYSODRAFT_518128  hypothetical protein [KO:K01835] [EC:5.4.2.2]
+            PHYSODRAFT_315309  hypothetical protein [KO:K08074] [EC:2.7.1.147]
+            PHYSODRAFT_507594  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_505323  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_507124  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_508399  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_498345  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_478745  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_333263  hypothetical protein [KO:K01792] [EC:5.1.3.15]
+            PHYSODRAFT_475094  multiple inositol polyphosphate phosphatase-like protein [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+            PHYSODRAFT_472758  hypothetical protein [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY psoj00020  Citrate cycle (TCA cycle)
+            psoj00030  Pentose phosphate pathway
+            psoj00500  Starch and sucrose metabolism
+            psoj00620  Pyruvate metabolism
+            psoj00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///

@@ -1,0 +1,99 @@
+ENTRY       vdi00020                    Pathway
+NAME        Citrate cycle (TCA cycle) - Vulcanisaeta distributa
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP vdi00020  Citrate cycle (TCA cycle)
+MODULE      vdi_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:vdi00020]
+            vdi_M00009  Citrate cycle (TCA cycle, Krebs cycle) [PATH:vdi00020]
+            vdi_M00010  Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate [PATH:vdi00020]
+            vdi_M00011  Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate [PATH:vdi00020]
+            vdi_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:vdi00020]
+DBLINKS     GO: 0006099
+ORGANISM    Vulcanisaeta distributa [GN:vdi]
+GENE        Vdis_1845  2-methylcitrate synthase/citrate synthase II [KO:K01647] [EC:2.3.3.1]
+            Vdis_0198  pyruvate carboxyltransferase [KO:K05942] [EC:2.3.3.3]
+            Vdis_1256  aconitate hydratase 1 [KO:K01681] [EC:4.2.1.3]
+            Vdis_2027  isocitrate dehydrogenase, NADP-dependent [KO:K00031] [EC:1.1.1.42]
+            Vdis_0063  FAD-dependent pyridine nucleotide-disulfide oxidoreductase [KO:K00382] [EC:1.8.1.4]
+            Vdis_0392  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            Vdis_1454  2-oxoglutarate synthase [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            Vdis_2276  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            Vdis_1455  pyruvate ferredoxin/flavodoxin oxidoreductase, beta subunit [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Vdis_1591  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Vdis_1059  pyruvate ferredoxin/flavodoxin oxidoreductase, beta subunit [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Vdis_2277  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            Vdis_1593  Pyruvate/ketoisovalerate oxidoreductase [KO:K00177] [EC:1.2.7.3]
+            Vdis_2278  Pyruvate/ketoisovalerate oxidoreductase [KO:K00177] [EC:1.2.7.3]
+            Vdis_1592  4Fe-4S ferredoxin iron-sulfur binding domain protein [KO:K00176] [EC:1.2.7.3]
+            Vdis_2275  4Fe-4S ferredoxin iron-sulfur binding domain protein [KO:K00176] [EC:1.2.7.3]
+            Vdis_1096  succinyl-CoA synthetase, alpha subunit [KO:K01902] [EC:6.2.1.5]
+            Vdis_1097  succinyl-CoA synthetase, beta subunit [KO:K01903] [EC:6.2.1.5]
+            Vdis_1813  succinate dehydrogenase or fumarate reductase, flavoprotein subunit [KO:K00239] [EC:1.3.5.1 1.3.5.4]
+            Vdis_0304  succinate dehydrogenase and fumarate reductase iron-sulfur protein [KO:K00240] [EC:1.3.5.1 1.3.5.4]
+            Vdis_0303  succinate dehydrogenase/fumarate reductase, cytochrome b subunit [KO:K00241]
+            Vdis_0302  conserved hypothetical protein [KO:K00242]
+            Vdis_2331  hydro-lyase, Fe-S type, tartrate/fumarate subfamily, alpha subunit [KO:K01677] [EC:4.2.1.2]
+            Vdis_2332  hydro-lyase, Fe-S type, tartrate/fumarate subfamily, beta subunit [KO:K01678] [EC:4.2.1.2]
+            Vdis_1363  fumarate lyase [KO:K01679] [EC:4.2.1.2]
+            Vdis_1757  Lactate/malate dehydrogenase [KO:K00024] [EC:1.1.1.37]
+            Vdis_0741  Phosphoenolpyruvate carboxykinase (GTP) [KO:K01596] [EC:4.1.1.32]
+            Vdis_0523  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Vdis_0694  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Vdis_1937  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Vdis_1987  pyruvate flavodoxin/ferredoxin oxidoreductase domain protein [KO:K00169] [EC:1.2.7.1]
+            Vdis_0524  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Vdis_0695  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Vdis_1986  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Vdis_1938  thiamine pyrophosphate protein domain protein TPP-binding protein [KO:K00170] [EC:1.2.7.1]
+            Vdis_1935  pyruvate/ketoisovalerate oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Vdis_0692  pyruvate/ketoisovalerate oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Vdis_1989  pyruvate/ketoisovalerate oxidoreductase, gamma subunit [KO:K00172] [EC:1.2.7.1]
+            Vdis_1988  pyruvate ferredoxin/flavodoxin oxidoreductase, delta subunit [KO:K00171] [EC:1.2.7.1]
+            Vdis_1936  pyruvate ferredoxin/flavodoxin oxidoreductase, delta subunit [KO:K00171] [EC:1.2.7.1]
+            Vdis_0522  4Fe-4S ferredoxin iron-sulfur binding domain protein [KO:K00171] [EC:1.2.7.1]
+            Vdis_0693  pyruvate ferredoxin/flavodoxin oxidoreductase, delta subunit [KO:K00171] [EC:1.2.7.1]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY vdi00010  Glycolysis / Gluconeogenesis
+            vdi00053  Ascorbate and aldarate metabolism
+            vdi00061  Fatty acid biosynthesis
+            vdi00071  Fatty acid degradation
+            vdi00190  Oxidative phosphorylation
+            vdi00220  Arginine biosynthesis
+            vdi00250  Alanine, aspartate and glutamate metabolism
+            vdi00280  Valine, leucine and isoleucine degradation
+            vdi00350  Tyrosine metabolism
+            vdi00471  D-Glutamine and D-glutamate metabolism
+            vdi00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///

@@ -1,0 +1,70 @@
+ENTRY       thg00020                    Pathway
+NAME        Citrate cycle (TCA cycle) - Thermogladius calderae
+DESCRIPTION The citrate cycle (TCA cycle, Krebs cycle) is an important aerobic pathway for the final steps of the oxidation of carbohydrates and fatty acids. The cycle starts with acetyl-CoA, the activated form of acetate, derived from glycolysis and pyruvate oxidation for carbohydrates and from beta oxidation of fatty acids. The two-carbon acetyl group in acetyl-CoA is transferred to the four-carbon compound of oxaloacetate to form the six-carbon compound of citrate. In a series of reactions two carbons in citrate are oxidized to CO2 and the reaction pathway supplies NADH for use in the oxidative phosphorylation and other metabolic processes. The pathway also supplies important precursor metabolites including 2-oxoglutarate. At the end of the cycle the remaining four-carbon part is transformed back to oxaloacetate. According to the genome sequence data, many organisms seem to lack genes for the full cycle [MD:M00009], but contain genes for specific segments [MD:M00010 M00011].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP thg00020  Citrate cycle (TCA cycle)
+MODULE      thg_M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:thg00020]
+            thg_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:thg00020]
+DBLINKS     GO: 0006099
+ORGANISM    Thermogladius calderae [GN:thg]
+GENE        TCELL_0774  pyruvate carboxyltransferase [KO:K05942] [EC:2.3.3.3]
+            TCELL_0777  isocitrate dehydrogenase [KO:K00030] [EC:1.1.1.41]
+            TCELL_0806  dihydrolipoamide dehydrogenase [KO:K00382] [EC:1.8.1.4]
+            TCELL_1232  2-oxoglutarate ferredoxin oxidoreductase subunit alpha [KO:K00174] [EC:1.2.7.3 1.2.7.11]
+            TCELL_1231  2-oxoglutarate ferredoxin oxidoreductase subunit beta [KO:K00175] [EC:1.2.7.3 1.2.7.11]
+            TCELL_1230  2-oxoglutarate ferredoxin oxidoreductase subunit gamma [KO:K00177] [EC:1.2.7.3]
+            TCELL_1233  2-oxoglutarate ferredoxin oxidoreductase subunit delta [KO:K00176] [EC:1.2.7.3]
+            TCELL_0724  succinyl-CoA synthetase, alpha subunit [KO:K01902] [EC:6.2.1.5]
+            TCELL_0723  succinyl-CoA synthetase, beta subunit [KO:K01903] [EC:6.2.1.5]
+            TCELL_0890  Carbamoyl-phosphate synthase L chain, ATP-binding protein [KO:K01959] [EC:6.4.1.1]
+            TCELL_1190  pyruvate carboxylase subunit B [KO:K01960] [EC:6.4.1.1]
+            TCELL_1080  phosphoenolpyruvate carboxykinase [KO:K01596] [EC:4.1.1.32]
+            TCELL_1236  pyruvate ferredoxinoxidoreductase subunit alpha [KO:K00169] [EC:1.2.7.1]
+            TCELL_1237  pyruvate ferredoxin oxidoreductase subunit beta [KO:K00170] [EC:1.2.7.1]
+            TCELL_0310  pyruvate/ketoisovalerate ferredoxin oxidoreductase subunit beta [KO:K00170] [EC:1.2.7.1]
+            TCELL_1234  pyruvate ferredoxinoxidoreductase subunit gamma [KO:K00172] [EC:1.2.7.1]
+            TCELL_0307  pyruvate/ketoisovalerate ferredoxin oxidoreductase subunit gamma [KO:K00172] [EC:1.2.7.1]
+            TCELL_1235  pyruvate ferredoxinoxidoreductase subunit delta [KO:K00171] [EC:1.2.7.1]
+            TCELL_0308  pyruvate/ketoisovalerate ferredoxin oxidoreductase subunit delta [KO:K00171] [EC:1.2.7.1]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00026  2-Oxoglutarate
+            C00036  Oxaloacetate
+            C00042  Succinate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00091  Succinyl-CoA
+            C00122  Fumarate
+            C00149  (S)-Malate
+            C00158  Citrate
+            C00311  Isocitrate
+            C00417  cis-Aconitate
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05379  Oxalosuccinate
+            C05381  3-Carboxy-1-hydroxypropyl-ThPP
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16254  [Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 2)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 3)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY thg00010  Glycolysis / Gluconeogenesis
+            thg00071  Fatty acid degradation
+            thg00190  Oxidative phosphorylation
+            thg00220  Arginine biosynthesis
+            thg00250  Alanine, aspartate and glutamate metabolism
+            thg00280  Valine, leucine and isoleucine degradation
+            thg00350  Tyrosine metabolism
+            thg00630  Glyoxylate and dicarboxylate metabolism
+KO_PATHWAY  ko00020
+///
