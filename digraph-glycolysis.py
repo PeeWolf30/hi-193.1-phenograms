@@ -132,12 +132,34 @@ def sortTable(FPTable):
 
     return FPTable
 
+
+
+
+def JSI(G):
+    #G = { G1, G2, G3, G4, G5 }
+    JSIMatrix = []
+    for i in range(len(G)):
+        row = []
+        for j in range(len(G)):
+            if (G.index(G[i]) != G.index(G[j])):
+                #get cardinalities of edges
+                intersection = len(list(set(G[i].Edges).intersection(set(G[j].Edges))))
+                union = len(G[i].Edges) + len(G[j].Edges) - intersection
+                value_JSI = round((intersection / union), 2)
+                row.append(value_JSI)
+            else:
+                row.append(0)
+        JSIMatrix.append(row)
+
+    print(tabulate(JSIMatrix))
+
+
+
 def main():
-    #preliminaries
+    ###### preliminaries #####
     currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
     parentdir = os.path.dirname(currentdir)
     sys.path.insert(0,parentdir)
-
     print("Our default download directory is {}".format(kg.DOWNLOAD_DIR))
     ############
 
@@ -179,7 +201,6 @@ def main():
     print("G2 Master")
     print(G2.Vertices)
     print(G2.Edges)
-
     ##### end SCHIZOSACCHAROMYCES POMBE #######
 
 
@@ -191,18 +212,15 @@ def main():
     #kg.get_infos("cin00010")
     pathway3A = kg.KEGGpathway(pathway_id = "cin00010")
     G3A = generateGraph(pathway3A)
-
     #selecting pathway: Citrate Cycle
     #kg.get_infos("cin00020")
     pathway3B = kg.KEGGpathway(pathway_id = "cin00020")
     G3B = generateGraph(pathway3B)
-
     G3 = combinePathways(G3A, G3B)
     print("G3 Master")
     print(G3.Vertices)
     print(G3.Edges)
-
-    ##### end SERINUS CANARIA #######
+    ##### end CIONA INTESTINALIS #######
 
 
 
@@ -227,7 +245,7 @@ def main():
     print(G4.Vertices)
     print(G4.Edges)
 
-    ##### end AILUROPODA MELANOLEUCA #######
+    ##### end BRASSICA OLERACEA #######
 
 
 
@@ -249,25 +267,23 @@ def main():
     print(G5.Vertices)
     print(G5.Edges)
 
-    ##### end PHYSETER CATODON #######
+    ##### end ENTEROBACTER SICHUANENSIS #######
 
 
     ##### ANALYZING GRAPHS #####
     G_set1 = [G1,G2,G3,G4,G5]
-
     for i in range(len(G_set1)):
         print(f"G{i+1} V: {len(G_set1[i].Vertices)} | G{i+1} E: {len(G_set1[i].Edges)}")
-
 
     #Printing FP Table
     FPTable = generateFPTable(G_set1)
     print(FPTable)
-
     #Sorting/Beautifying FP Table
     FPTable_sorted = sortTable(FPTable)
 
     print(tabulate(FPTable_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
 
+    JSI(G_set1)
 
 if __name__=="__main__":
     main()

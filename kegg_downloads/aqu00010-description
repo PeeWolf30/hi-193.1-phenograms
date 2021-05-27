@@ -1,0 +1,99 @@
+ENTRY       aqu00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Amphimedon queenslandica (sponge)
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP aqu00010  Glycolysis / Gluconeogenesis
+MODULE      aqu_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:aqu00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Amphimedon queenslandica (sponge) [GN:aqu]
+GENE        100639704  putative hexokinase HKDC1 [KO:K00844] [EC:2.7.1.1]
+            100636863  glucose-6-phosphate isomerase-like [KO:K01810] [EC:5.3.1.9]
+            100634020  ATP-dependent 6-phosphofructokinase, muscle type-like [KO:K00850] [EC:2.7.1.11]
+            100638089  fructose-1,6-bisphosphatase 1-like isoform X1 [KO:K03841] [EC:3.1.3.11]
+            100640992  fructose-bisphosphate aldolase-like [KO:K01623] [EC:4.1.2.13]
+            100631718  fructose-bisphosphate aldolase-like [KO:K01623] [EC:4.1.2.13]
+            100631697  triosephosphate isomerase-like [KO:K01803] [EC:5.3.1.1]
+            100633223  triosephosphate isomerase-like [KO:K01803] [EC:5.3.1.1]
+            100638159  phosphoglycerate kinase 1-like [KO:K00927] [EC:2.7.2.3]
+            100632232  2,3-bisphosphoglycerate-independent phosphoglycerate mutase-like [KO:K15633] [EC:5.4.2.12]
+            100633963  enolase-like [KO:K01689] [EC:4.2.1.11]
+            100637575  enolase 4-like [KO:K01689] [EC:4.2.1.11]
+            100633847  pyruvate kinase PKM-like [KO:K00873] [EC:2.7.1.40]
+            100632648  pyruvate kinase PKM-like [KO:K00873] [EC:2.7.1.40]
+            100639129  pyruvate kinase PKM-like [KO:K00873] [EC:2.7.1.40]
+            100631462  pyruvate dehydrogenase E1 component subunit alpha, somatic form, mitochondrial-like [KO:K00161] [EC:1.2.4.1]
+            100631470  pyruvate dehydrogenase E1 component subunit beta, mitochondrial-like [KO:K00162] [EC:1.2.4.1]
+            100634474  dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial-like [KO:K00627] [EC:2.3.1.12]
+            100640270  dihydrolipoyl dehydrogenase, mitochondrial-like [KO:K00382] [EC:1.8.1.4]
+            100641833  alcohol dehydrogenase class-3 chain L-like isoform X2 [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            100639365  uncharacterized protein LOC100639365 [KO:K13953] [EC:1.1.1.1]
+            100640350  uncharacterized protein LOC100640350 [KO:K00002] [EC:1.1.1.2]
+            100632875  alcohol dehydrogenase [NADP(+)]-like [KO:K00002] [EC:1.1.1.2]
+            100632196  aldehyde dehydrogenase, mitochondrial-like [KO:K00128] [EC:1.2.1.3]
+            100641287  fatty aldehyde dehydrogenase-like [KO:K00128] [EC:1.2.1.3]
+            100635156  fatty aldehyde dehydrogenase-like [KO:K00128] [EC:1.2.1.3]
+            100638181  aldehyde dehydrogenase family 16 member A1-like [KO:K00128] [EC:1.2.1.3]
+            105312369  retinal dehydrogenase 1-like [KO:K00128] [EC:1.2.1.3]
+            100634152  alpha-aminoadipic semialdehyde dehydrogenase-like [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            100640016  alpha-aminoadipic semialdehyde dehydrogenase-like [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            100639963  alpha-aminoadipic semialdehyde dehydrogenase-like [KO:K14085] [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            100639483  acetyl-coenzyme A synthetase 2-like, mitochondrial [KO:K01895] [EC:6.2.1.1]
+            100632115  acetyl-coenzyme A synthetase 2-like, mitochondrial [KO:K01895] [EC:6.2.1.1]
+            100638723  aldose 1-epimerase-like [KO:K01785] [EC:5.1.3.3]
+            100634538  phosphoglucomutase-2-like [KO:K15779] [EC:5.4.2.2 5.4.2.7]
+            100639257  phosphoglucomutase-2-like [KO:K15779] [EC:5.4.2.2 5.4.2.7]
+            100635428  ADP-dependent glucokinase-like [KO:K08074] [EC:2.7.1.147]
+            100640936  ADP-dependent glucokinase-like [KO:K08074] [EC:2.7.1.147]
+            100631933  putative glucose-6-phosphate 1-epimerase isoform X2 [KO:K01792] [EC:5.1.3.15]
+            109582726  multiple inositol polyphosphate phosphatase 1-like isoform X1 [KO:K03103] [EC:3.1.3.62 3.1.3.80]
+            100634531  phosphoenolpyruvate carboxykinase, cytosolic [GTP] [KO:K01596] [EC:4.1.1.32]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY aqu00020  Citrate cycle (TCA cycle)
+            aqu00030  Pentose phosphate pathway
+            aqu00500  Starch and sucrose metabolism
+            aqu00620  Pyruvate metabolism
+            aqu00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///
