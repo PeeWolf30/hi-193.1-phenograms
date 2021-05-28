@@ -1,0 +1,94 @@
+ENTRY       spo00010                    Pathway
+NAME        Glycolysis / Gluconeogenesis - Schizosaccharomyces pombe (fission yeast)
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP spo00010  Glycolysis / Gluconeogenesis
+MODULE      spo_M00001  Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate [PATH:spo00010]
+            spo_M00002  Glycolysis, core module involving three-carbon compounds [PATH:spo00010]
+            spo_M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:spo00010]
+DBLINKS     GO: 0006096 0006094
+ORGANISM    Schizosaccharomyces pombe (fission yeast) [GN:spo]
+GENE        SPAC24H6.04  hxk1; hexokinase 1 [KO:K00844] [EC:2.7.1.1]
+            SPAC4F8.07c  hxk2; hexokinase 2 [KO:K00844] [EC:2.7.1.1]
+            SPBC1604.05  pgi1; putative glucose-6-phosphate isomerase [KO:K01810] [EC:5.3.1.9]
+            SPBC16H5.02  pfk1; putative 6-phosphofructokinase [KO:K00850] [EC:2.7.1.11]
+            SPBC1198.14c  fbp1; fructose-1,6-bisphosphatase Fbp1 [KO:K03841] [EC:3.1.3.11]
+            SPBC19C2.07  fba1; fructose-bisphosphate aldolase Fba1 [KO:K01624] [EC:4.1.2.13]
+            SPCC24B10.21  tpi1; triosephosphate isomerase [KO:K01803] [EC:5.3.1.1]
+            SPBC354.12  gpd3; glyceraldehyde 3-phosphate dehydrogenase Gpd3 [KO:K00134] [EC:1.2.1.12]
+            SPBC32F12.11  tdh1; glyceraldehyde-3-phosphate dehydrogenase Tdh1 [KO:K00134] [EC:1.2.1.12]
+            SPBC14F5.04c  pgk1; putative phosphoglycerate kinase Pgk1 [KO:K00927] [EC:2.7.2.3]
+            SPAC26F1.06  gpm1; monomeric 2,3-bisphosphoglycerate (BPG)-dependent phosphoglycerate mutase (PGAM), Gpm1 [KO:K01834] [EC:5.4.2.11]
+            SPBC1815.01  eno101; putative enolase [KO:K01689] [EC:4.2.1.11]
+            SPBPB21E7.01c  eno102; putative enolase [KO:K01689] [EC:4.2.1.11]
+            SPAC4H3.10c  pyk1; putative pyruvate kinase [KO:K00873] [EC:2.7.1.40]
+            SPAC26F1.03  pda1; putative pyruvate dehydrogenase E1 component alpha subunit Pda1 [KO:K00161] [EC:1.2.4.1]
+            SPBC30D10.13c  pdb1; pyruvate dehydrogenase E1 component beta subunit Pdb1 [KO:K00162] [EC:1.2.4.1]
+            SPCC794.07  lat1; putative dihydrolipoamide S-acetyltransferase E2 Lat1 [KO:K00627] [EC:2.3.1.12]
+            SPAC1002.09c  dld1; dihydrolipoamide dehydrogenase Dld1 [KO:K00382] [EC:1.8.1.4]
+            SPAC186.08c  putative L-lactate dehydrogenase [KO:K00016] [EC:1.1.1.27]
+            SPAC1F8.07c  putative pyruvate decarboxylase [KO:K01568] [EC:4.1.1.1]
+            SPAC3G9.11c  putative pyruvate decarboxylase [KO:K01568] [EC:4.1.1.1]
+            SPAC186.09  putative pyruvate decarboxylase [KO:K01568] [EC:4.1.1.1]
+            SPAC13A11.06  putative pyruvate decarboxylase [KO:K01568] [EC:4.1.1.1]
+            SPBC1539.07c  putative glutathione-dependent formaldehyde dehydrogenase [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            SPCC13B11.04c  putative glutathione-dependent formaldehyde dehydrogenase [KO:K00121] [EC:1.1.1.284 1.1.1.1]
+            SPCC13B11.01  adh1; alcohol dehydrogenase Adh1 [KO:K13953] [EC:1.1.1.1]
+            SPAC5H10.06c  adh4; alcohol dehydrogenase Adh4 [KO:K13954] [EC:1.1.1.1]
+            SPAC26F1.07  putative NADP-dependent glucose 1-dehydrogenase [KO:K00002] [EC:1.1.1.2]
+            SPAC9E9.09c  putative aldehyde dehydrogenase [KO:K00128] [EC:1.2.1.3]
+            SPAC922.07c  putative aldehyde dehydrogenase [KO:K00128] [EC:1.2.1.3]
+            SPCC191.02c  putative acetyl-CoA ligase [KO:K01895] [EC:6.2.1.1]
+            SPBPB2B2.12c  gal10; UDP-glucose 4-epimerase/aldose 1-epimerase Gal10 [KO:K01784 K01785] [EC:5.1.3.2 5.1.3.3]
+            SPBC32F12.10  putative phosphoglucomutase [KO:K01835] [EC:5.4.2.2]
+            SPCC1840.05c  putative phosphoglucomutase [KO:K01835] [EC:5.4.2.2]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY spo00020  Citrate cycle (TCA cycle)
+            spo00030  Pentose phosphate pathway
+            spo00500  Starch and sucrose metabolism
+            spo00620  Pyruvate metabolism
+            spo00640  Propanoate metabolism
+KO_PATHWAY  ko00010
+///
