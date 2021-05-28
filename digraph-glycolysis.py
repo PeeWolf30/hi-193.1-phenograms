@@ -62,9 +62,10 @@ def combinePathways(GA, GB):
 
     return GMaster
 
-def print_phenogram(dist_matrix, graph_names):
+def print_phenogram(title, dist_matrix, graph_names):
     clustered_matrix = hierarchy.linkage(dist_matrix, 'single')
     plt.figure()
+    plt.title(title)
     pn = hierarchy.dendrogram(clustered_matrix, labels=graph_names)
     plt.show()
 
@@ -181,6 +182,9 @@ def getJSISim(graphs, fptable):
 
             sim_mat[i].append(curr_intersection / curr_union)
 
+    print("Sim MAT")
+    print(tabulate(sim_mat))
+
     return sim_mat
 
 def getHammingSim(graphs, fptable):
@@ -214,123 +218,16 @@ def main():
     print("Our default download directory is {}".format(kg.DOWNLOAD_DIR))
     ############
 
-    ##### [1] HOMO SAPIENS #######
-    #getting info: Homo sapiens (human
-    #selecting pathway: Glycolysis
-    #kg.get_infos("hsa00010")
-    pathway1A = kg.KEGGpathway(pathway_id = "hsa00010")
-    G1A = generateGraph(pathway1A)
-
-    #selecting pathway: Citrate Cycle
-    #kg.get_infos("hsa00020")
-    pathway1B = kg.KEGGpathway(pathway_id = "hsa00020")
-    G1B = generateGraph(pathway1B)
-
-    G1 = combinePathways(G1A, G1B)
-    # print("G1 Master")
-    # print(G1.Vertices)
-    # print(G1.Edges)
-
-    ##### end HOMO SAPIENS #######
-
-
-
-
-    ##### [2] SCHIZOSACCHAROMYCES POMBE #######
-    #getting info: Schizosaccharomyces pombe
-    #selecting pathway: Glycolysis
-    #kg.get_infos("spo00010")
-    pathway2A = kg.KEGGpathway(pathway_id = "spo00010")
-    G2A = generateGraph(pathway2A)
-
-    #selecting pathway: Citrate Cycle
-    #kg.get_infos("spo00020")
-    pathway2B = kg.KEGGpathway(pathway_id = "spo00020")
-    G2B = generateGraph(pathway2B)
-
-    G2 = combinePathways(G2A, G2B)
-    # print("G2 Master")
-    # print(G2.Vertices)
-    # print(G2.Edges)
-
-    ##### end SCHIZOSACCHAROMYCES POMBE #######
-
-
-
-
-    ##### [3] CIONA INTESTINALIS #######
-    #getting info: Ciona intestinalis (sea squirt)
-    #selecting pathway: Glycolysis
-    #kg.get_infos("cin00010")
-    pathway3A = kg.KEGGpathway(pathway_id = "cin00010")
-    G3A = generateGraph(pathway3A)
-
-    #selecting pathway: Citrate Cycle
-    #kg.get_infos("cin00020")
-    pathway3B = kg.KEGGpathway(pathway_id = "cin00020")
-    G3B = generateGraph(pathway3B)
-
-    G3 = combinePathways(G3A, G3B)
-    # print("G3 Master")
-    # print(G3.Vertices)
-    # print(G3.Edges)
-
-    ##### end SERINUS CANARIA #######
-
-
-
-
-    ##### [4] BRASSICA OLERACEA #######
-    #getting info: Brassica oleracea (wild cabbage)
-    #selecting pathway: Glycolysis
-    #kg.get_infos("boe00010")
-    pathway4A = kg.KEGGpathway(pathway_id = "boe00010")
-    G4A = generateGraph(pathway4A)
-    # print("PRINTING HERE")
-    # print(G4A.Vertices)
-    # print(G4A.Edges)
-
-    #selecting pathway: Citrate Cycle
-    #kg.get_infos("boe00020")
-    pathway4B = kg.KEGGpathway(pathway_id = "boe00020")
-    G4B = generateGraph(pathway4B)
-
-    G4 = combinePathways(G4A, G4B)
-    # print("G4 Master")
-    # print(G4.Vertices)
-    # print(G4.Edges)
-
-    ##### end AILUROPODA MELANOLEUCA #######
-
-
-
-
-    ##### [5] ENTEROBACTER SICHUANENSIS #######
-    #getting info: Enterobacter sichuanesis
-    #selecting pathway: Glycolysis
-    #kg.get_infos("esh00010")
-    pathway5A = kg.KEGGpathway(pathway_id = "esh00010")
-    G5A = generateGraph(pathway5A)
-
-    #selecting pathway: Citrate Cycle
-    #kg.get_infos("esh00020")
-    pathway5B = kg.KEGGpathway(pathway_id = "esh00020")
-    G5B = generateGraph(pathway5B)
-
-    G5 = combinePathways(G5A, G5B)
-    # print("G5 Master")
-    # print(G5.Vertices)
-    # print(G5.Edges)
-
-    ##### end PHYSETER CATODON #######
+    #Set 1
+    G1 = getInfoKegg("Homo sapiens", "hsa00010", "hsa00020")
+    G2 = getInfoKegg("Schizosaccharomyces pombe", "spo00010", "spo00020")
+    G3 = getInfoKegg("Ciona intestinalis (sea squirt)", "cin00010", "cin00020")
+    G4 = getInfoKegg("Brassica oleracea", "boe00010", "boe00020")
+    G5 = getInfoKegg("Enterobacter sichuanensis", "esh00010", "esh00020")
 
 
     ##### ANALYZING GRAPHS #####
     G_set1 = [G1,G2,G3,G4,G5]
-
-    # for i in range(len(G_set1)):
-    #     print(f"G{i+1} V: {len(G_set1[i].Vertices)} | G{i+1} E: {len(G_set1[i].Edges)}")
-
 
     #Printing FP Table
     FPTable = generateFPTable(G_set1)
@@ -339,7 +236,7 @@ def main():
     #Sorting/Beautifying FP Table
     FPTable1_sorted = sortTable(FPTable)
 
-    # print(tabulate(FPTable1_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
+    print(tabulate(FPTable1_sorted, headers=["SI No.", "DE", "BitCode"], tablefmt='grid'))
 
 
     #Set 2
@@ -370,11 +267,11 @@ def main():
     set2_sim_mat_hd = getHammingSim(G_set2, FPTable2_sorted)
     set2_sim_mat_jsi = getJSISim(G_set2, FPTable2_sorted)
 
-    print_phenogram(set1_sim_mat_hd, set1_names)
-    print_phenogram(set1_sim_mat_jsi, set1_names)
+    print_phenogram("Set 1 - SIM using HD",set1_sim_mat_hd, set1_names)
+    print_phenogram("Set 1 - SIM using JSI",set1_sim_mat_jsi, set1_names)
     
-    print_phenogram(set2_sim_mat_hd, set2_names)
-    print_phenogram(set2_sim_mat_jsi, set2_names)
+    print_phenogram("Set 2 - SIM using HD",set2_sim_mat_hd, set2_names)
+    print_phenogram("Set 2 - SIM using JSI",set2_sim_mat_jsi, set2_names)
 
 
 if __name__=="__main__":
