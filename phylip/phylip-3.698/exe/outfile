@@ -1,0 +1,45 @@
+
+Consensus tree program, version 3.698
+
+Species in order: 
+
+  1. ini
+  2. ovi
+  3. psoj
+  4. hic
+  5. thg
+
+
+Sets included in the consensus tree
+
+Set (species in order)     How many times out of    1.00
+
+.**..                       1.00
+...**                       1.00
+
+
+Sets NOT included in consensus tree: NONE
+
+
+Extended majority rule consensus tree
+
+CONSENSUS TREE:
+the numbers on the branches indicate the number
+of times the partition of the species into the two sets
+which are separated by that branch occurred
+among the trees, out of   1.00 trees
+(trees had fractional weights)
+
+                  +-------ovi
+          +--1.00-|
+          |       +-------psoj
+  +-------|
+  |       |       +-------thg
+  |       +--1.00-|
+  |               +-------hic
+  |
+  +-----------------------ini
+
+
+  remember: this is an unrooted tree!
+
