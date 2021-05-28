@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1a1edd1-66f5-45a3-a635-bf1a4b5f5067" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/digraph-glycolysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/digraph-glycolysis.py" afterDir="false" />
-    </list>
+    <list default="true" id="d1a1edd1-66f5-45a3-a635-bf1a4b5f5067" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +12,7 @@
     <session id="1541792503">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -50,19 +47,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/digraph-glycolysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="242" column="22" lean-forward="true" selection-start-line="242" selection-start-column="22" selection-end-line="242" selection-end-column="45" />
+            <state relative-caret-position="442">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#182#276#0" />
-                <element signature="e#310#358#0" />
-                <element signature="e#403#893#0" />
-                <element signature="e#932#1085#0" />
-                <element signature="e#1119#1292#0" />
-                <element signature="e#1327#1616#0" />
-                <element signature="e#1855#2031#0" />
-                <element signature="e#3642#4122#0" />
-                <element signature="e#5007#5615#0" />
               </folding>
             </state>
           </provider>
@@ -84,6 +72,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,11 +91,13 @@
     <option name="width" value="980" />
     <option name="height" value="1031" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,13 +185,14 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="0" width="653" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20031796" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32881355" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35738832" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3559322" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -216,19 +211,10 @@
     <entry file="file://$PROJECT_DIR$/digraph-biopython.py" />
     <entry file="file://$PROJECT_DIR$/digraph-glycolysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="242" column="22" lean-forward="true" selection-start-line="242" selection-start-column="22" selection-end-line="242" selection-end-column="45" />
+        <state relative-caret-position="442">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#182#276#0" />
-            <element signature="e#310#358#0" />
-            <element signature="e#403#893#0" />
-            <element signature="e#932#1085#0" />
-            <element signature="e#1119#1292#0" />
-            <element signature="e#1327#1616#0" />
-            <element signature="e#1855#2031#0" />
-            <element signature="e#3642#4122#0" />
-            <element signature="e#5007#5615#0" />
           </folding>
         </state>
       </provider>
